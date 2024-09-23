@@ -1,0 +1,23 @@
+table {
+    width: 50%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid rgb(245, 93, 93);
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #e0bcbc;
+}
+
+.espaco {
+    height: 100px; 
+}
+a {
+color: black; /* Muda a cor do link */
+
+}
+a:hover {
+    color: blue; /* Muda a cor do link ao passar o rato */
+}
