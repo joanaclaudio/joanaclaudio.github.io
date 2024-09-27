@@ -8,21 +8,115 @@
 
     <body>
         <h2>Quizz</h2>
+        <form method="get" action="https://postman-echo.com/get">
+            <fieldset>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="Insira o nome" required autofocus>
 
-        <fieldset>
-            <label for="nome">Nome:</label>
-            <input type="text" name="nome" id="nome" placeholder="Insira o nome">
+                <label for="apelido">Apelido:</label>
+                <input type="text" name="apelido" id="apelido" placeholder="Insira o apelido" required>
 
-            <label for="apelido">Apelido:</label>
-            <input type="text" name="apelido" id="apelido" placeholder="Insira o apelido">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Insira o email" size="30" autocomplete="email">
 
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email" placeholder="Insira o email">
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend><h3>Informações Sobre A Cidade</h3></legend>
 
-        </fieldset>
-        <fieldset>
+                <label for="nome_da_cidade">Qual o nome da Cidade?:</label>
+                <input type="text" name="nome_da_cidade" id="nome_da_cidade" required>
+                <label for="transporte">Selecione o principal meio de transporte na Cidade?:</label>
+                <select name="transporte" id="transporte" required>
+                    <option value="autocarro">Autocarro</option>
+                    <option value="metro">Metro</option>
+                    <option value="bicicleta">Bicicleta</option>
+                    <option value="taxi">Táxi</option>
+                    <option value="a-pe">A pé</option>
+                </select>
+
+                <br><br>
+
+                <label for="populução">Qual a população estimada?:</label>
+                <input type="number" name="população" id="população" required>
+
+                <label for="hora_de_ponta">Qual o principal horário de maior tráfego?:</label>
+                <input type="time" name="hora_de_ponta" id="hora_de_ponta" required>
+
+                <br><br>
+
+                <label for="fundação">O dia, mês e ano em que a Cidade foi fundada?:</label>
+                <input type="date" name="fundação" id="fundação" >
+                <label for="cor_bandeira">Qual a cor da bandeira da Cidade?:</label>
+                <input type="color" id="bandeira-cor" name="bandeira-cor">
+
+                <br><br>
+
+                <label for="faixa_etaria">Qual a faixa etária da população?</label>
+                <input type="range" id="faixa_etaria" name="faixa_etaria" min="0" max="100" step="1" value="50">
+                <span id="faixa_etaria_valor">50 Anos</span>
+                
+                <br><br>
+
+                <label>É uma Cidade costeira ou do interior?</label>
+                <input type="radio" id="costeira" name="localizacao" value="costeira">
+                <label for="costeira">Costeira</label>
+                <input type="radio" id="interior" name="localizacao" value="interior">
+                <label for="interior">Interior</label>
+                <br><br>
+
+                <label for="clima">Qual é o clima da Cidade?</label>
+                <input type="text" id="clima" name="clima" list="clima_list" placeholder="Insira o clima">
+                <datalist id="clima_list">
+                    <option value="Tropical">
+                    <option value="Temperado">
+                    <option value="Mediterrânio">
+                    <option value="Ártico">
+                    <option value="Subtropical">
+                    <option value="Seco">
+                </datalist>
+                <br><br>
+
+                <label>Quais os pontos turísticos mais populares?</label>
+                <input type="checkbox" id="praia" name="pontos-turisticos" value="praia">
+                <label for="praia">Praias</label>
+                <input type="checkbox" id="montanha" name="pontos-turisticos" value="montanha">
+                <label for="montanha">Montanhas</label>
+                <input type="checkbox" id="museu" name="pontos-turisticos" value="museu">
+                <label for="museu">Museus</label>
+                <input type="checkbox" id="parque" name="pontos-turisticos" value="parque">
+                <label for="parque">Parques Naturais</label>
+                <input type="checkbox" id="monumentos" name="pontos-turisticos" value="monumentos>
+                <label for="monumentos">Monumentos</label>
+
+                <br><br>
+
+                <label for="descricao">Descreva brevemente a cidade:</label><br>
+                <textarea id="descricao" name="descricao" rows="4" cols="50"  maxlength="200" placeholder="Escreva uma descrição sobre a cidade..."></textarea><br><br>
+
+
+                <input type="image" src="/lab3/images/botao.jpg" alt="Enviar" width="100" height="50">
+                <br><br><br>
+
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Repor">
+            </fieldset>
+
+        </form>
+        <script>
+                
+            const faixaEtariaRange = document.getElementById('faixa_etaria');
+            const faixaEtariaValor = document.getElementById('faixa_etaria_valor');
+    
             
-        </fieldset>
+            faixaEtariaRange.addEventListener('input', function() {
+                faixaEtariaValor.textContent = faixaEtariaRange.value + ' Anos';
+            });
+
+            document.querySelector('input[type="reset"]').addEventListener('click', function() {
+                faixaEtariaValor.textContent = faixaEtariaRange.defaultValue + ' Anos'; // Retorna ao valor padrão
+                    });
+        </script>
         
         
         
