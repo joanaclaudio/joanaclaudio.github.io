@@ -21,3 +21,11 @@ color: black; /* Muda a cor do link */
 a:hover {
     color: blue; /* Muda a cor do link ao passar o rato */
 }
+
+.info_title {
+    /* Estilos para o título da cidade */
+    font-size: 35px;
+    color: #1b0c0c;
+    font-family : cursive;
+    
+}
