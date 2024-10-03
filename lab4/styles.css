@@ -42,11 +42,11 @@
 }
 .home{
     background-color: #ffffff;
-    border: 1px solid rgba(149, 68, 11, 0.588);  
+    border: 1px solid rgb(237, 178, 0);;  
     border-radius: 5px; 
     padding: 20px; 
     margin: 20px;
-    box-shadow: 0 3px 6px rgba(149, 68, 11, 0.588); 
+    box-shadow: 0 3px 6px rgb(237, 178, 0);; 
 }
 .home h2 {
     margin-top: 0;
