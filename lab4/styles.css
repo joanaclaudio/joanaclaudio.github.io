@@ -1,9 +1,9 @@
 .city_title {
     /* Estilos para o título da cidade */
-    font-size: 50px;
-    color: #000000;
+    font-size: 100px;
+    color: #ffffff;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    background-color: rgb(149, 69, 11);
+    background-color: rgb(237, 178, 0);
     text-align :center;
     padding: 40px;
     margin: 0
@@ -12,14 +12,14 @@
 
 .imagem {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0;
+    margin-right: 0;
     
 
 }
 .menu_navegacao{ display: flex; 
     justify-content: center;
-    background-color: rgba(149, 68, 11, 0.588); 
+    background-color: rgba(237, 178, 0, 0.505); 
     padding: 10px;
     margin: 0px;
     border-radius: 20px; 
@@ -27,11 +27,11 @@
 
 
 .menu_navegacao a {
-    color: black; /* Muda a cor do link */
+    color: rgb(0, 0, 0); /* Muda a cor do link */
     margin: 0 15px; 
     padding: 10px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 30px;
    
  
 }
@@ -57,6 +57,36 @@
     
 
 }
+.container {
+    display: flex;
+    justify-content: space-around; /* Espaço entre as caixas */
+    align-items: center;
+}
+.box {
+    width: 700px;
+    height: 700px;
+    border: 2px solid #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.box div div:first-child {
+    width: 700px;
+    height: 800px;
+    border: 2px solid #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilizando a imagem dentro das caixas */
+.box img {
+    width: 100%;
+    height: auto; /* Imagem se adapta ao tamanho da caixa */
+}
+
 
 #fotografias h3, #video h3, #poema h3 {
     color: rgb(149, 69, 11);
