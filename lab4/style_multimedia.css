@@ -1,0 +1,7 @@
+a {
+    color: black; /* Muda a cor do link */
+            
+}
+a:hover {
+    color: blue; /* Muda a cor do link ao passar o rato */
+}

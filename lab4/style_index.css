@@ -1,0 +1,19 @@
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.city_title {
+    /* Estilos para o título da cidade */
+    font-size: 32px;
+    color: #1b0c0c;
+    font-family : cursive;
+    
+}
+a {
+    color: black; /* Muda a cor do link */
+    
+}
+a:hover {
+    color: blue; /* Muda a cor do link ao passar o rato */
+}
