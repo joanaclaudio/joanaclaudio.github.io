@@ -5,15 +5,44 @@ img {
 }
 .city_title {
     /* Estilos para o título da cidade */
-    font-size: 60px;
-    color: #1b0c0c;
-    font-family : cursive;
+    font-size: 50px;
+    color: #000000;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(149, 69, 11);
+    text-align :center;
+    padding: 40px;
+
+    margin: 0
     
 }
+
+div {
+    background-color: rgba(149, 68, 11, 0.588); 
+    padding: 10px;
+    margin: 0px;
+    
+}
+nav {
+    display: flex; 
+    justify-content: center;
+    
+    
+}
+
+
+
+
 a {
     color: black; /* Muda a cor do link */
+    margin: 0 15px; 
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+   
+    
     
 }
 a:hover {
     color: blue; /* Muda a cor do link ao passar o rato */
+
 }
