@@ -22,7 +22,7 @@
     background-color: rgba(237, 178, 0, 0.505); 
     padding: 10px;
     margin: 0px;
-    border-radius: 20px; 
+    
 }
 
 
@@ -31,7 +31,7 @@
     margin: 0 15px; 
     padding: 10px;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 20px;
    
  
 }
@@ -44,12 +44,15 @@
     background-color: #ffffff;
     border: 1px solid rgb(237, 178, 0);;  
     border-radius: 5px; 
-    padding: 20px; 
+    padding: 50px; 
     margin: 20px;
     box-shadow: 0 3px 6px rgb(237, 178, 0);; 
 }
 .home h2 {
     margin-top: 0;
+}
+.home p {
+    font-size: 20px;
 }
 .final{
     background-color: rgba(149, 68, 11, 0.252); 
@@ -89,9 +92,54 @@
 
 
 #fotografias h3, #video h3, #poema h3 {
-    color: rgb(149, 69, 11);
+    color: rgb(237, 178, 0);;
     font-size: 24px;
-    border-bottom: 2px solid rgb(149, 69, 11);
+    border-bottom: 2px solid rgb(237, 178, 0);;
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
+
+.info_title{
+    font-size: 50px;
+    color: #ffffff;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(237, 178, 0);
+    text-align :center;
+    padding: 40px;
+    margin: 0
+}
+.info_text{
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+}
+.table{
+    table {
+        
+        width: 100%;
+        border-collapse: collapse;
+    
+
+    }
+    th, td {
+        border: 1px solid rgba(237, 178, 0, 0.505);
+        padding: 8px;
+        text-align: left;
+        
+
+    }
+    th {
+        background-color:rgba(237, 178, 0, 0.505);
+    }
+}
+
+.links a{
+    color: rgb(0, 0, 0); /* Muda a cor do link */
+    margin: 0px; 
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+
