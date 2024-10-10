@@ -1,44 +1,48 @@
-.city_title {
-    /* Estilos para o título da cidade */
-    font-size: 100px;
-    color: #ffffff;
+
+
+
+header{
     font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
     background-color: rgb(237, 178, 0);
     text-align :center;
+    margin: 0;
     padding: 40px;
-    margin: 0
+    
     
 }
-
-.imagem {
-    display: block;
-    margin-left: 0;
-    margin-right: 0;
-    
-
+.city_title {
+    font-size: 80px;
 }
-.menu_navegacao{ display: flex; 
+.titles{
+    font-size: 50px;
+}
+
+nav{
+    display: flex; 
     justify-content: center;
     background-color: rgba(237, 178, 0, 0.505); 
     padding: 10px;
     margin: 0px;
     
+    
 }
-
-
-.menu_navegacao a {
+nav a{
     color: rgb(0, 0, 0); /* Muda a cor do link */
     margin: 0 15px; 
     padding: 10px;
     text-decoration: none;
     font-size: 20px;
-   
- 
 }
-.menu_navegacao a:hover {
-    background-color: #ddd;
+nav a:hover{
+    background-color: #ffffff;
     color: black;
+}
 
+main{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    
 }
 .home{
     background-color: #ffffff;
@@ -47,18 +51,32 @@
     padding: 50px; 
     margin: 20px;
     box-shadow: 0 3px 6px rgb(237, 178, 0);; 
-}
-.home h2 {
     margin-top: 0;
+   
 }
-.home p {
+
+footer a{
+    font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    color: rgb(255, 255, 255); /* Muda a cor do link */
+    margin: 0px; 
+    background-color: rgb(237, 178, 0);
+    text-decoration: none;
+    font-size: 25px;
+    line-height: 8;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
 }
+
+
+
+
 .final{
     background-color: rgba(149, 68, 11, 0.252); 
     text-align :center;
     
-
 }
 .container {
     display: flex;
@@ -72,6 +90,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 
 
 }
@@ -84,10 +103,10 @@
     align-items: center;
 }
 
-/* Estilizando a imagem dentro das caixas */
 .box img {
     width: 100%;
     height: auto; /* Imagem se adapta ao tamanho da caixa */
+    border-radius: 10px;
 }
 
 
@@ -99,20 +118,7 @@
     margin-bottom: 20px;
 }
 
-.info_title{
-    font-size: 50px;
-    color: #ffffff;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    background-color: rgb(237, 178, 0);
-    text-align :center;
-    padding: 40px;
-    margin: 0
-}
-.info_text{
-    font-size: 20px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
 
-}
 .table{
     table {
         
@@ -137,19 +143,6 @@
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
-.links a{
-    text-align: center;
-    padding: 10px;
-    background-color: #f0f0f0;
-    color: rgb(0, 0, 0); /* Muda a cor do link */
-    margin: 0px; 
-    
-    text-decoration: none;
-    font-size: 35px;
-    line-height: 8;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-
-}
 
 .poema_text pre {
     font-size: 20px;
@@ -162,12 +155,16 @@
 }
 
 form {
-    background-color: rgba(237, 178, 0, 0.205); /* Cor de fundo azul claro */
+    background-color: rgba(237, 178, 0, 0.205); /* Cor de fundo*/
     padding: 20px; /* Espaçamento interno */
     
     font-size: 16px;
     font-family:Georgia, 'Times New Roman', Times, serif;
 
 
+}
+
+.quebra_de_linha{
+    margin-bottom: 50px;
 }
 
