@@ -61,7 +61,7 @@ main{
    
 }
 
-.caixa{
+.caixa_ordenada{
     background-color: #ffffff;
     border: 1px solid rgba(237, 178, 0, 0.505);;  
     border-radius: 5px;
@@ -69,11 +69,26 @@ main{
     margin: 20px;
     box-shadow: 0 3px 6px rgba(237, 178, 0, 0.505);; 
     margin-top: 0;
-    list-style-type: circle;
+    list-style-type:upper-roman;
 }
-.caixa li {
+.caixa_ordenada li {
     margin-left: 20px;
+    margin-block: 10px;
+
 }
+.caixa_nao_ordenada li:nth-child(2n + 1){
+    background-color: rgba(237, 178, 0, 0.505);
+    
+}
+.caixa_nao_ordenada li {
+    margin-left: 20px;
+    margin-block: 10px;
+
+}
+.caixa_nao_ordenada{
+    list-style-type:circle;
+}
+
 .caixa_title{
     background-color: #ffffff;
     border: 1px solid rgba(237, 178, 0, 0.505);;  
@@ -115,7 +130,7 @@ footer a{
 }
 .box {
     width: 700px;
-    height: 700px;
+    height: 500px;
     border: 2px solid #ffffff;
     display: flex;
     justify-content: center;
@@ -196,5 +211,20 @@ form {
 
 .quebra_de_linha{
     margin-bottom: 50px;
+}
+
+.nomes_pontos_interesse{
+    color: rgb(237, 150, 0);;
+    
+}
+
+.ajuste_mapa{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.links{
+    color: black;
 }
 
