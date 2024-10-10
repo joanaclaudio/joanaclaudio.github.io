@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Viagem</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+
+    <body>
+        <header><h2 class="titles">Viagem</h2></header>
+        
+         <main>
+            <form method="get" action="https://postman-echo.com/get">
+                <fieldset>
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" placeholder="Insira o nome" required autofocus>
+
+                    <label for="apelido">Apelido:</label>
+                    <input type="text" name="apelido" id="apelido" placeholder="Insira o apelido" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Insira o email" size="30" autocomplete="email">
+
+                </fieldset>
+
+                <fieldset>
+                    <legend><h3>Registar Viagem</h3></legend>
+
+                    <label for="data_partida">Data de Partida:</label>
+                    <input type="date" name="data_partida" id="data_partida" required>
+
+                    <label for="data_chegada">Data de Chegada:</label>
+                    <input type="date" name="data_chegada" id="data_chegada"required>
+
+                    <br><br>
+
+                    <label for="passageiros">Número de Passageiros:</label>
+                    <input type="number" name="passageiros" id="passageiros" required>
+
+                    <label for="transporte">Selecione o meio de transporte favorito:</label>
+                    <select name="transporte" id="transporte" required>
+                        <option value="carro">Carro</option>
+                        <option value="comboio">Comboio</option>
+                        <option value="aviao">Avião</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                    <br><br>
+
+                    <label>Qual o serviço que deseja na sua viagem?:</label>
+                    <input type="radio" id="basico" name="serviço" value="basico" required>
+                    <label for="basico">Básico</label>
+                    <input type="radio" id="premium" name="serviço" value="premium" required>
+                    <label for="premium">Premium</label>
+
+                    <br><br>
+
+                    <label for="pedidos">Pedidos especiais:</label><br>
+                    <textarea id="pedidos" name="pedidos" rows="4" cols="50"  maxlength="100" placeholder="Se tiver algum pedido especial escreva aqui..."></textarea><br><br>
+
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Repor">
+
+                </fieldset>
+            </form>
+        </main>
+
+        <br><br>
+        <footer>
+            <a href="/lab4/index.html"><b>Back</b></a>
+        </footer>
+        
+        
+
+    </body>
+</html>

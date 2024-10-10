@@ -1,0 +1,191 @@
+
+
+
+header{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
+    background-color: rgb(237, 178, 0);
+    text-align :center;
+    margin: 0;
+    padding: 40px;
+    
+    
+}
+.city_title {
+    font-size: 80px;
+}
+.titles{
+    font-size: 50px;
+}
+
+nav{
+    display: flex; 
+    justify-content: center;
+    background-color: rgba(237, 178, 0, 0.505); 
+    padding: 10px;
+    margin: 0px;
+    
+    
+}
+nav a{
+    color: rgb(0, 0, 0); /* Muda a cor do link */
+    margin: 0 15px; 
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+nav a:hover{
+    background-color: #ffffff;
+    color: black;
+}
+
+main{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    
+}
+.home{
+    background-color: #ffffff;
+    border: 1px solid rgb(237, 178, 0);;  
+    border-radius: 5px; 
+    padding: 20px; 
+    margin: 20px;
+    box-shadow: 0 3px 6px rgb(237, 178, 0);; 
+    margin-top: 0;
+   
+}
+
+.caixa{
+    background-color: #ffffff;
+    border: 1px solid rgb(237, 178, 0);;  
+    border-radius: 5px;
+    padding: 20px; 
+    margin: 20px;
+    box-shadow: 0 3px 6px rgb(237, 178, 0);; 
+    margin-top: 0;
+    list-style-type: circle;
+}
+.caixa_title{
+    background-color: #ffffff;
+    border: 1px solid rgb(237, 178, 0);;  
+    border-radius: 5px;
+    padding: 10px; 
+    margin: 10px;
+    box-shadow: 0 3px 6px rgb(237, 178, 0);; 
+    margin-top: 0;
+}
+
+
+footer a{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    color: rgb(255, 255, 255); /* Muda a cor do link */
+    margin: 0px; 
+    background-color: rgb(237, 178, 0);
+    text-decoration: none;
+    font-size: 25px;
+    line-height: 8;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+}
+
+
+
+
+.final{
+    background-color: rgba(149, 68, 11, 0.252); 
+    text-align :center;
+    
+}
+.container {
+    display: flex;
+    justify-content: space-around; /* Espaço entre as caixas */
+    align-items: center;
+}
+.box {
+    width: 700px;
+    height: 700px;
+    border: 2px solid #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+
+}
+.box div div:first-child {
+    width: 700px;
+    height: 800px;
+    border: 2px solid #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box img {
+    width: 100%;
+    height: auto; /* Imagem se adapta ao tamanho da caixa */
+    border-radius: 10px;
+}
+
+
+#fotografias h3, #video h3, #poema h3 {
+    color: rgb(237, 178, 0);;
+    font-size: 24px;
+    border-bottom: 2px solid rgb(237, 178, 0);;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+
+.table{
+    table {
+        
+        width: 100%;
+        border-collapse: collapse;
+    
+
+    }
+    th, td {
+        border: 1px solid rgba(237, 178, 0, 0.505);
+        padding: 8px;
+        text-align: left;
+        
+
+    }
+    th {
+        background-color:rgba(237, 178, 0, 0.505);
+    }
+}
+.table tr{
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.poema_text pre {
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.Website a {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+form {
+    background-color: rgba(237, 178, 0, 0.205); /* Cor de fundo*/
+    padding: 20px; /* Espaçamento interno */
+    
+    font-size: 16px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+
+}
+
+.quebra_de_linha{
+    margin-bottom: 50px;
+}
+
