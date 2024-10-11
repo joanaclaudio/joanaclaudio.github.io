@@ -17,6 +17,7 @@ header{
 .city_title {
     font-size: 80px;
     background-color: #0000006c;
+    text-transform: uppercase;
 }
 .titles{
     font-size: 50px;
@@ -30,6 +31,7 @@ nav{
     background-color: rgba(237, 178, 0, 0.505); 
     padding: 10px;
     margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
     
     
 }
@@ -47,7 +49,7 @@ nav a:hover{
 
 main{
     font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
+    font-size: 18px;
     
 }
 .home{
@@ -74,6 +76,7 @@ main{
 .caixa_ordenada li {
     margin-left: 20px;
     margin-block: 10px;
+    font-size: 1.0em;
 
 }
 .caixa_nao_ordenada li:nth-child(2n + 1){
@@ -83,6 +86,7 @@ main{
 .caixa_nao_ordenada li {
     margin-left: 20px;
     margin-block: 10px;
+    font-size: 1.0em;
 
 }
 .caixa_nao_ordenada{
@@ -183,13 +187,15 @@ footer a{
         
 
     }
-    th {
-        background-color:rgba(237, 178, 0, 0.505);
-    }
+    
 }
 .table tr{
     font-size: 20px;
     font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.table tr:nth-child(2n + 1){
+    background-color: rgba(237, 178, 0, 0.123)
 }
 
 
@@ -197,19 +203,16 @@ footer a{
     font-size: 20px;
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
-.Website a {
-    font-size: 20px;
-    color: rgb(0, 0, 0);
-    font-family:Georgia, 'Times New Roman', Times, serif;
-}
+
 
 form {
-    background-color: rgba(237, 178, 0, 0.205); /* Cor de fundo*/
-    padding: 20px; /* Espaçamento interno */
-    
-    font-size: 16px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-
+    background-color: #ffffff;
+    border: 1px solid rgba(237, 178, 0, 0.505);;  
+    border-radius: 5px;
+    padding: 10px; 
+    margin: 10px;
+    box-shadow: 0 3px 6px rgba(237, 178, 0, 0.505);; 
+    margin-top: 0;
 
 }
 
@@ -218,7 +221,8 @@ form {
 }
 
 .nomes_pontos_interesse{
-    color: rgb(237, 150, 0);;
+    color: rgb(237, 150, 0);
+    font-size: 20px;
     
 }
 
@@ -228,7 +232,13 @@ form {
     
 }
 
-.links{
+
+.links a{
     color: black;
+    
+    margin: 0 15px; 
+    padding: 10px;   
+
 }
+
 

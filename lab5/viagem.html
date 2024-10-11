@@ -20,10 +20,13 @@
             <a href="quizz.html">Quizz</a>
             <a href="pontosinteresse.html">Pontos de Interesse</a>
         </nav>
+
         
          <main>
+            <div class="quebra_de_linha"></div>
+            
             <form method="get" action="https://postman-echo.com/get">
-                <fieldset>
+                <fieldset class="caixa_title">
                     <label for="nome">Nome:</label>
                     <input type="text" name="nome" id="nome" placeholder="Insira o nome" required autofocus>
 
@@ -35,8 +38,8 @@
 
                 </fieldset>
 
-                <fieldset>
-                    <legend><h3>Registar Viagem</h3></legend>
+                <fieldset class="caixa_title">
+                    <h3 class="caixa_title">Registar Viagem</h3>
 
                     <label for="data_partida">Data de Partida:</label>
                     <input type="date" name="data_partida" id="data_partida" required>
