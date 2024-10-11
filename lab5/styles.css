@@ -2,6 +2,7 @@
 
 
 header{
+    
     font-family:Georgia, 'Times New Roman', Times, serif;
     color: rgb(255, 255, 255);
     background-image: url(/lab5/images/30066507234_a0058dc636_b.jpg);
@@ -26,6 +27,9 @@ header{
 }
 
 nav{
+    position: sticky;
+    height: 5vh;
+    top: 0;
     display: flex; 
     justify-content: center;
     background-color: rgba(237, 178, 0, 0.505); 
