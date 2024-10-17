@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+            * {box-sizing:border-box;}
+        
+        </style>
+        <title>Viagem</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="responsive.css">
+    </head>
+
+
+    <body>
+        <header><h2 class="titles">Viagem</h2></header>
+
+        <nav>
+            <a href="index.html">Home</a>
+            
+            
+            
+
+            <div class="dropdown">
+                <button class="dropbtn">
+                  Menu 
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="info.html">Informação</a>
+                    <a href="local.html">Localização</a>
+                    <a href="multimedia.html">Multimedia</a>
+                    <a href="viagem.html">Viagem</a>
+                    <a href="quizz.html">Quizz</a>
+                    <a href="pontosinteresse.html">Pontos de Interesse</a>
+                    <a href="capitais.html">Capitais</a>
+                </div>
+              </div> 
+            
+
+        </nav>
+
+        
+         <main>
+            <div class="quebra_de_linha"></div>
+            
+            <form method="get" action="https://postman-echo.com/get">
+                <fieldset class="caixa_title">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" placeholder="Insira o nome" required autofocus>
+
+                    <label for="apelido">Apelido:</label>
+                    <input type="text" name="apelido" id="apelido" placeholder="Insira o apelido" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Insira o email" size="30" autocomplete="email">
+
+                </fieldset>
+
+                <fieldset class="caixa_title">
+                    <h3 class="caixa_title">Registar Viagem</h3>
+
+                    <label for="data_partida">Data de Partida:</label>
+                    <input type="date" name="data_partida" id="data_partida" required>
+
+                    <label for="data_chegada">Data de Chegada:</label>
+                    <input type="date" name="data_chegada" id="data_chegada"required>
+
+                    <br><br>
+
+                    <label for="passageiros">Número de Passageiros:</label>
+                    <input type="number" name="passageiros" id="passageiros" required>
+
+                    <label for="transporte">Selecione o meio de transporte favorito:</label>
+                    <select name="transporte" id="transporte" required>
+                        <option value="carro">Carro</option>
+                        <option value="comboio">Comboio</option>
+                        <option value="aviao">Avião</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                    <br><br>
+
+                    <label>Qual o serviço que deseja na sua viagem?:</label>
+                    <input type="radio" id="basico" name="serviço" value="basico" required>
+                    <label for="basico">Básico</label>
+                    <input type="radio" id="premium" name="serviço" value="premium" required>
+                    <label for="premium">Premium</label>
+
+                    <br><br>
+
+                    <label for="pedidos">Pedidos especiais:</label><br>
+                    <textarea id="pedidos" name="pedidos" rows="4" cols="50"  maxlength="100" placeholder="Se tiver algum pedido especial escreva aqui..."></textarea><br><br>
+
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Repor">
+
+                </fieldset>
+            </form>
+        </main>
+        
+        <aside></aside>
+
+        <br><br>
+        <footer>
+            <a href="/lab5/index.html"><b>Back</b></a>
+        </footer>
+        
+        
+
+    </body>
+</html>
