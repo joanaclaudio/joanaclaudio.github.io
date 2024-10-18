@@ -20,19 +20,15 @@
         
 
         
+        
         <nav>
             <a href="index.html">Home</a>
             
             
-            
-
             <div class="dropdown">
-                <button class="dropbtn">
-                  Menu 
-                  <i class="fa fa-caret-down"></i>
-                </button>
+                <button class="menu" onclick="toggleMenu()">☰ Menu</button>
                 <div class="dropdown-content">
-                    <a href="info.html">Informação</a>
+                    <a href="info.html">Informações</a>
                     <a href="local.html">Localização</a>
                     <a href="multimedia.html">Multimedia</a>
                     <a href="viagem.html">Viagem</a>
@@ -57,175 +53,293 @@
 
             <div class="home">
                 <h4 class="caixa_title">Top 5 de Restaurantes:</h4>
-            
-                <ul class="caixa_ordenada">
-                    <li><span class="nomes_pontos_interesse">Belcanto</span>, localizado na Rua Serpa Pinto, 10 A, 1200-445 Lisboa.</li>
-                    <li><span class="nomes_pontos_interesse">Cervejaria Ramiro</span>, localizado na Avenida Almirante Reis 1- H, 1150-007 Lisboa.</li>
-                    <li><span class="nomes_pontos_interesse">Solar Dos Presuntos</span>, localizado na Rua Das Portas De Stº Antão, 150, 1150-269 Lisboa</li>
-                    <li><span class="nomes_pontos_interesse">O Magano Restaurante Alentejano</span>, localizado na Rua Tomás da Anunciação 52A, 1350-328 Lisboa.</li>
-                    <li><span class="nomes_pontos_interesse">Gambrinus Lisboa</span>, localizado na Rua das Portas de Stº Antão 23, 1150-264 Lisboa</li>
-                </ul>
+                <div class="text_complete">
+                    <ul class="caixa_ordenada">
+                        <li><span class="nomes_pontos_interesse">Belcanto</span>, localizado na Rua Serpa Pinto, 10 A, 1200-445 Lisboa.</li>
+                        <li><span class="nomes_pontos_interesse">Cervejaria Ramiro</span>, localizado na Avenida Almirante Reis 1- H, 1150-007 Lisboa.</li>
+                        <li><span class="nomes_pontos_interesse">Solar Dos Presuntos</span>, localizado na Rua Das Portas De Stº Antão, 150, 1150-269 Lisboa</li>
+                        <li><span class="nomes_pontos_interesse">O Magano Restaurante Alentejano</span>, localizado na Rua Tomás da Anunciação 52A, 1350-328 Lisboa.</li>
+                        <li><span class="nomes_pontos_interesse">Gambrinus Lisboa</span>, localizado na Rua das Portas de Stº Antão 23, 1150-264 Lisboa</li>
+                    </ul>
+                </div>
+                <div class="text_phone">
+                    <ul class="caixa_ordenada">
+                        <li><span class="nomes_pontos_interesse">Belcanto</span></li>
+                        <li><span class="nomes_pontos_interesse">Cervejaria Ramiro</span></li>
+                        <li><span class="nomes_pontos_interesse">Solar Dos Presuntos</span></li>
+                        <li><span class="nomes_pontos_interesse">O Magano Restaurante Alentejano</span></li>
+                        <li><span class="nomes_pontos_interesse">Gambrinus Lisboa</span></li>
+                    </ul>
+                </div>
             </div>
 
             <div class="quebra_de_linha"></div>
 
             <div class="home">
                 <h4 class="caixa_title">Top 5 de Monumentos:</h4>
-            
-                <ul class="caixa_ordenada">
-                    <li><span class="nomes_pontos_interesse">Torre De Belém</span>, localizado na Avenida Brasília, 1400-038 Lisboa.</li>
-                    <li><span class="nomes_pontos_interesse">Mosteiro Dos Jerónimos</span>, localizado na Praça Do Império, 1400-206 Lisboa.</li>
-                    <li><span class="nomes_pontos_interesse">Catedral De Lisboa</span>, localizado no Largo Da Sé 1, 1100-585 Lisboa.</li>
-                    <li><span class="nomes_pontos_interesse">Castelo De São Jorge</span>, localizado na Rua Santa Cruz Do Castelo, 1100-129 Lisboa.</li>
-                    <li><span class="nomes_pontos_interesse">Padrão Dos Descobrimentos</span>, localizado na Avenida Brasília, 1400-038 Lisboa.</li>
-                </ul>
+                <div class="text_complete">
+                    <ul class="caixa_ordenada">
+                        <li><span class="nomes_pontos_interesse">Torre De Belém</span>, localizado na Avenida Brasília, 1400-038 Lisboa.</li>
+                        <li><span class="nomes_pontos_interesse">Mosteiro Dos Jerónimos</span>, localizado na Praça Do Império, 1400-206 Lisboa.</li>
+                        <li><span class="nomes_pontos_interesse">Catedral De Lisboa</span>, localizado no Largo Da Sé 1, 1100-585 Lisboa.</li>
+                        <li><span class="nomes_pontos_interesse">Castelo De São Jorge</span>, localizado na Rua Santa Cruz Do Castelo, 1100-129 Lisboa.</li>
+                        <li><span class="nomes_pontos_interesse">Padrão Dos Descobrimentos</span>, localizado na Avenida Brasília, 1400-038 Lisboa.</li>
+                    </ul>
+                </div>
+                <div class="text_phone">
+                    <ul class="caixa_ordenada">
+                        <li><span class="nomes_pontos_interesse">Torre De Belém</span></li>
+                        <li><span class="nomes_pontos_interesse">Mosteiro Dos Jerónimos</span></li>
+                        <li><span class="nomes_pontos_interesse">Catedral De Lisboa</span></li>
+                        <li><span class="nomes_pontos_interesse">Castelo De São Jorge</span></li>
+                        <li><span class="nomes_pontos_interesse">Padrão Dos Descobrimentos</span></li>
+                    </ul>
+                </div>
             </div>
 
             <div class="quebra_de_linha"></div>
 
             <div class="home">
                 <h4 class="caixa_title">Locais a Não Perder:</h4>
-            
-                <ul class="caixa_nao_ordenada">
-                    <li class="links">Oceanário de Lisboa <a  href="https://oceanario.pt/">https://oceanario.pt/</a></li>
-                    <li class="links" >Jardim Zoológico <a href="https://www.zoo.pt/">https://www.zoo.pt/</a></li>
-                    <li class="links">Gulbenkian <a  href="https://gulbenkian.pt/">https://gulbenkian.pt/</a></li>
-                    <li class="links">Lx Factory <a  href="https://lxfactory.com/">https://lxfactory.com/</a></li>
-                    <li class="links">Museu Nacional de Arte Antiga <a href="http://museudearteantiga.pt/">http://museudearteantiga.pt/</a></li>
+                <div class="text_complete">
+                    <ul class="caixa_nao_ordenada">
+                        <li class="links">Oceanário de Lisboa <a  href="https://oceanario.pt/">https://oceanario.pt/</a></li>
+                        <li class="links" >Jardim Zoológico <a href="https://www.zoo.pt/">https://www.zoo.pt/</a></li>
+                        <li class="links">Gulbenkian <a  href="https://gulbenkian.pt/">https://gulbenkian.pt/</a></li>
+                        <li class="links">Lx Factory <a  href="https://lxfactory.com/">https://lxfactory.com/</a></li>
+                        <li class="links">Museu Nacional de Arte Antiga <a href="http://museudearteantiga.pt/">http://museudearteantiga.pt/</a></li>
 
-                </ul>
+                    </ul>
+                </div>
+                <div class="text_phone">
+                    <ul class="caixa_nao_ordenada">
+                        <li class="links"><a  href="https://oceanario.pt/">Oceanário de Lisboa </a></li>
+                        <li class="links" > <a href="https://www.zoo.pt/">Jardim Zoológico</a></li>
+                        <li class="links"> <a  href="https://gulbenkian.pt/">Gulbenkian</a></li>
+                        <li class="links"> <a  href="https://lxfactory.com/">Lx Factory</a></li>
+                        <li class="links"> <a href="http://museudearteantiga.pt/">Museu Nacional de Arte Antiga</a></li>
+
+                    </ul>
+                </div>
                 
             </div>
 
             <div class="quebra_de_linha"></div>
 
-            <div class="home">
+            <div class="text_complete">
+                <div class="home">
                     <h4 class="caixa_title">Melhor Local Para Tirar Uma Foto:</h4>
-                    <p>Miradouro da Senhora do Monte</p>
+                    <p>Miradouro da Nossa Senhora do Monte</p>
                     <div class="container">
                 
                         <div class="box">
-                            <img src="/lab5/images/MiradourodaSenhoradoMonteemLisboa.jpeg" alt="Imagem1">
+                            <img src="images/MiradourodaSenhoradoMonteemLisboa.jpeg" alt="Imagem1">
                         </div>
                         <div class="box">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3112.938834028986!2d-9.135404724218654!3d38.71921327176273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19338f34837d57%3A0x611f8deb59a26af4!2sMiradouro%20da%20Nossa%20Senhora%20do%20Monte!5e0!3m2!1spt-PT!2spt!4v1728575155057!5m2!1spt-PT!2spt" 
                                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
+                </div>
+            </div>
+            
+            <div class="text_phone">
+                <div class="home">
+                    <h4 class="caixa_title">Melhor Local Para Tirar Uma Foto:</h4>
+                    <div class="links"><a  href="https://www.bing.com/maps?q=miradouro+da+senhora+do+monte&FORM=HDRSC7&cp=38.719219%7E-9.132836&lvl=16.0">Miradouro da Nossa Senhora do Monte</a></div>
+                </div>
             </div>
 
             <div class="quebra_de_linha"></div>
 
+            <div class="text_complete">
+                <div class="home">
+                    <h4 class="caixa_title">Melhor Altura para Visitar:</h4>
 
-            <div class="home">
-                <h4 class="caixa_title">Melhor Altura para Visitar:</h4>
-
-                <table class="table">
-                    <tr>
-                        <th>Mês</th>
-                        <th>Ranking (0 a 10)</th>                       
-                    </tr>
-                    <tr>
-                        <td>Janeiro</td>
-                        
-                        <td><span class="nomes_pontos_interesse">4.5/10</span>: Clima frio para os padrões de Lisboa, com temperaturas variando entre 7°C e 15°C. Pode haver alguns dias chuvosos, mas também há dias de sol.
-                            Turismo baixíssima quantidade de turistas, ideal para quem quer explorar a cidade sem multidões.
-                            Eventos algumas celebrações de Ano Novo no início do mês e o Dia de Reis (6 de janeiro), mas o mês é geralmente tranquilo em termos de eventos.
-                            Custos um dos meses mais baratos para visitar Lisboa, com ótimas promoções em acomodações e voos.</td>
+                    <table class="table">
+                        <tr>
+                            <th>Mês</th>
+                            <th>Ranking (0 a 10)</th>                       
+                        </tr>
+                        <tr>
+                            <td>Janeiro</td>
                             
-                    </tr>
-                    
-                    <tr>
-                        <td>Fevereiro</td>
-                        <td><span class="nomes_pontos_interesse">5/10</span>: Clima semelhante a janeiro, com temperaturas entre 8°C e 16°C. A chuva ainda pode aparecer, mas há mais dias de sol à medida que o mês avança.
-                            Turismo a cidade continua tranquila em relação ao fluxo de visitantes, embora o Carnaval, caso caia em fevereiro, possa trazer um pouco mais de movimento.
-                            Eventos carnaval, com algumas festividades e desfiles em bairros locais.
-                            Custos ainda bem acessíveis, com bons preços em hotéis e restaurantes.</td>
+                            <td><span class="nomes_pontos_interesse">4.5/10</span>: Clima frio para os padrões de Lisboa, com temperaturas variando entre 7°C e 15°C. Pode haver alguns dias chuvosos, mas também há dias de sol.
+                                Turismo baixíssima quantidade de turistas, ideal para quem quer explorar a cidade sem multidões.
+                                Eventos algumas celebrações de Ano Novo no início do mês e o Dia de Reis (6 de janeiro), mas o mês é geralmente tranquilo em termos de eventos.
+                                Custos um dos meses mais baratos para visitar Lisboa, com ótimas promoções em acomodações e voos.</td>
+                                
+                        </tr>
                         
-                    </tr>
-                    <tr>
-                        <td>Março</td>
-                        <td><span class="nomes_pontos_interesse">6/10</span>: Clima começa a aquecer, com temperaturas entre 10°C e 18°C.
-                            Turismo menos turistas, ideal para quem prefere lugares mais calmos.
-                            Eventos início da primavera, com flores e paisagens bonitas.
-                            Custos relativamente baixos.</td>
-                        
-                    </tr>
-                    <tr>
-                        <td>Abril</td>
-                        <td><span class="nomes_pontos_interesse">7.5/10</span>: Clima dias mais longos e temperaturas entre 12°C e 20°C.
-                            Turismo o fluxo de turistas começa a aumentar, mas ainda é suportável.
-                            Eventos semana Santa e início de festivais de primavera.
-                            Custos moderados, antes do aumento de preços para o verão.</td>
-                        
-                    </tr>
-                    <tr>
-                        <td>Maio</td>
-                        <td><span class="nomes_pontos_interesse">10/10</span>: Clima agradável, com temperaturas amenas entre 15°C e 25°C.
-                            Turismo ainda não é alta temporada, então a cidade está relativamente tranquila.
-                            Eventos festivais de música e a proximidade das Festas de Lisboa em junho.
-                            Custos moderados, com preços de acomodação ainda acessíveis.</td>
-                        
-                    </tr>
-                    <tr>
-                        <td>Junho</td>
-                        <td><span class="nomes_pontos_interesse">8.5/10</span>: Clima começa o verão, com temperaturas agradáveis entre 18°C e 28°C.
-                            Turismo alta temporada, mas o ambiente festivo compensa.
-                            Eventos as Festas de Lisboa são destaque, com celebrações por toda a cidade.
-                            Custos os preços começam a aumentar, mas é possível encontrar boas opções</td>
-                        
-                    </tr>
-                    <tr>
-                        <td>Julho</td>
-                        <td><span class="nomes_pontos_interesse">7/10</span>: Clima muito calor, com temperaturas entre 20°C e 30°C.
-                            Turismo alta temporada, com muitos turistas.
-                            Eventos muitas opções de atividades ao ar livre e festivais de verão.
-                            Custos altos, principalmente em acomodações e passagens.</td>
-                        
-                    </tr>
-                    <tr>
-                        <td>Agosto</td>
-                        <td><span class="nomes_pontos_interesse">6.5/10</span>: Clima quente, muitas vezes ultrapassando os 30°C.
-                            Turismo muito movimentado, especialmente nas praias.
-                            Eventos festivais de verão em toda a cidade e região.
-                            Custos um dos meses mais caros para visitar.</td>
-                        
-                    </tr>
-                    <tr>
-                        <td>Setembro</td>
-                        <td><span class="nomes_pontos_interesse">9/10</span>: Clima perfeito, com dias ensolarados e temperaturas entre 17°C e 28°C.
-                            Turismo o fluxo de turistas começa a diminuir após agosto, tornando os passeios mais tranquilos.
-                            Eventos muitos eventos ao ar livre e festivais.
-                            Custos ainda são mais altos, mas melhores do que nos meses de verão.</td>
-                        
-                    </tr>
-                    <tr>
-                        <td>Outubro</td>
-                        <td><span class="nomes_pontos_interesse">8/10</span>: Clima temperaturas amenas (15°C a 23°C) e menos chuvas do que em novembro.
-                            Turismo queda significativa de turistas, o que torna os passeios mais relaxantes.
-                            Eventos alguns festivais de outono e eventos culturais.
-                            Custos baixa de preços, especialmente no final do mês.</td>
-                        
-                    </tr>
-                    <tr>
-                        <td>Novembro</td>
-                        <td><span class="nomes_pontos_interesse">5.5/10</span>: Clima mais frio e chuvoso, com temperaturas entre 10°C e 18°C.
-                            Turismo bem menos turistas, o que torna os locais mais acessíveis.
-                            Eventos alguns festivais culturais e início das decorações de Natal.
-                            Custos baixos, com boas promoções em acomodações.</td>
-                        
-                    </tr>
-                    <tr>
-                        <td>Dezembro</td>
-                        <td><span class="nomes_pontos_interesse">5/10</span>: Clima frio, com temperaturas variando entre 8°C e 15°C.
-                            Turismo mais turistas no final do mês devido às festas de Natal e Ano Novo.
-                            Eventos decorações de Natal e mercados natalinos.
-                            Custos moderados no início do mês, mas aumentam nas festas.</td>
-                        
-                    </tr>
-                </table>
-    
+                        <tr>
+                            <td>Fevereiro</td>
+                            <td><span class="nomes_pontos_interesse">5/10</span>: Clima semelhante a janeiro, com temperaturas entre 8°C e 16°C. A chuva ainda pode aparecer, mas há mais dias de sol à medida que o mês avança.
+                                Turismo a cidade continua tranquila em relação ao fluxo de visitantes, embora o Carnaval, caso caia em fevereiro, possa trazer um pouco mais de movimento.
+                                Eventos carnaval, com algumas festividades e desfiles em bairros locais.
+                                Custos ainda bem acessíveis, com bons preços em hotéis e restaurantes.</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Março</td>
+                            <td><span class="nomes_pontos_interesse">6/10</span>: Clima começa a aquecer, com temperaturas entre 10°C e 18°C.
+                                Turismo menos turistas, ideal para quem prefere lugares mais calmos.
+                                Eventos início da primavera, com flores e paisagens bonitas.
+                                Custos relativamente baixos.</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Abril</td>
+                            <td><span class="nomes_pontos_interesse">7.5/10</span>: Clima dias mais longos e temperaturas entre 12°C e 20°C.
+                                Turismo o fluxo de turistas começa a aumentar, mas ainda é suportável.
+                                Eventos semana Santa e início de festivais de primavera.
+                                Custos moderados, antes do aumento de preços para o verão.</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Maio</td>
+                            <td><span class="nomes_pontos_interesse">10/10</span>: Clima agradável, com temperaturas amenas entre 15°C e 25°C.
+                                Turismo ainda não é alta temporada, então a cidade está relativamente tranquila.
+                                Eventos festivais de música e a proximidade das Festas de Lisboa em junho.
+                                Custos moderados, com preços de acomodação ainda acessíveis.</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Junho</td>
+                            <td><span class="nomes_pontos_interesse">8.5/10</span>: Clima começa o verão, com temperaturas agradáveis entre 18°C e 28°C.
+                                Turismo alta temporada, mas o ambiente festivo compensa.
+                                Eventos as Festas de Lisboa são destaque, com celebrações por toda a cidade.
+                                Custos os preços começam a aumentar, mas é possível encontrar boas opções</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Julho</td>
+                            <td><span class="nomes_pontos_interesse">7/10</span>: Clima muito calor, com temperaturas entre 20°C e 30°C.
+                                Turismo alta temporada, com muitos turistas.
+                                Eventos muitas opções de atividades ao ar livre e festivais de verão.
+                                Custos altos, principalmente em acomodações e passagens.</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Agosto</td>
+                            <td><span class="nomes_pontos_interesse">6.5/10</span>: Clima quente, muitas vezes ultrapassando os 30°C.
+                                Turismo muito movimentado, especialmente nas praias.
+                                Eventos festivais de verão em toda a cidade e região.
+                                Custos um dos meses mais caros para visitar.</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Setembro</td>
+                            <td><span class="nomes_pontos_interesse">9/10</span>: Clima perfeito, com dias ensolarados e temperaturas entre 17°C e 28°C.
+                                Turismo o fluxo de turistas começa a diminuir após agosto, tornando os passeios mais tranquilos.
+                                Eventos muitos eventos ao ar livre e festivais.
+                                Custos ainda são mais altos, mas melhores do que nos meses de verão.</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Outubro</td>
+                            <td><span class="nomes_pontos_interesse">8/10</span>: Clima temperaturas amenas (15°C a 23°C) e menos chuvas do que em novembro.
+                                Turismo queda significativa de turistas, o que torna os passeios mais relaxantes.
+                                Eventos alguns festivais de outono e eventos culturais.
+                                Custos baixa de preços, especialmente no final do mês.</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Novembro</td>
+                            <td><span class="nomes_pontos_interesse">5.5/10</span>: Clima mais frio e chuvoso, com temperaturas entre 10°C e 18°C.
+                                Turismo bem menos turistas, o que torna os locais mais acessíveis.
+                                Eventos alguns festivais culturais e início das decorações de Natal.
+                                Custos baixos, com boas promoções em acomodações.</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Dezembro</td>
+                            <td><span class="nomes_pontos_interesse">5/10</span>: Clima frio, com temperaturas variando entre 8°C e 15°C.
+                                Turismo mais turistas no final do mês devido às festas de Natal e Ano Novo.
+                                Eventos decorações de Natal e mercados natalinos.
+                                Custos moderados no início do mês, mas aumentam nas festas.</td>
+                            
+                        </tr>
+                    </table>
+        
 
+                </div>
+            </div>
+
+            <div class="text_phone">
+                <div class="home">
+                    <h4 class="caixa_title">Melhor Altura para Visitar:</h4>
+
+                    <table class="table">
+                        <tr>
+                            <th>Mês</th>
+                            <th>Ranking (0 a 10)</th>                       
+                        </tr>
+                        <tr>
+                            <td>Janeiro</td>
+                            
+                            <td><span class="nomes_pontos_interesse">4.5/10</span></td>
+                                
+                        </tr>
+                        
+                        <tr>
+                            <td>Fevereiro</td>
+                            <td><span class="nomes_pontos_interesse">5/10</span></td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Março</td>
+                            <td><span class="nomes_pontos_interesse">6/10</span></td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Abril</td>
+                            <td><span class="nomes_pontos_interesse">7.5/10</span></td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Maio</td>
+                            <td><span class="nomes_pontos_interesse">10/10</span></td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Junho</td>
+                            <td><span class="nomes_pontos_interesse">8.5/10</span></td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Julho</td>
+                            <td><span class="nomes_pontos_interesse">7/10</span></td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Agosto</td>
+                            <td><span class="nomes_pontos_interesse">6.5/10</span></td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Setembro</td>
+                            <td><span class="nomes_pontos_interesse">9/10</span></td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Outubro</td>
+                            <td><span class="nomes_pontos_interesse">8/10</span></td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Novembro</td>
+                            <td><span class="nomes_pontos_interesse">5.5/10</span></td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Dezembro</td>
+                            <td><span class="nomes_pontos_interesse">5/10</span></td>
+                            
+                        </tr>
+                    </table>
+        
+
+                </div>
             </div>
 
 
@@ -235,10 +349,11 @@
 
         <aside></aside>
 
+        
         <footer>
-           
-            <a href="/lab5/index.html"><b>Back</b></a>
-            
+            <div class="final">
+                <p>DIW 2024</p>
+            </div>
         </footer>
 
     

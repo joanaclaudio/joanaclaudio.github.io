@@ -1,300 +1,295 @@
-@media (max-height: 780px) and (max-width: 360px){
-    header{
-    
-        font-family:Georgia, 'Times New Roman', Times, serif;
-        color: rgb(255, 255, 255);
-        background-image: url(/lab5/images/30066507234_a0058dc636_b.jpg);
-        background-size:contain;
-        background-position: center;
-        text-align :center;
-        margin: 0;
-        padding: 30px;
-        
-        
-        
-    }
-    .city_title {
-        font-size: 80px;
-        background-color: #0000006c;
-        text-transform: uppercase;
-        display: flex; 
-        justify-content: center;
-    
-    }
-    .titles{
-        font-size: 50px;
-        background-color: #0000006c;
-    
-    }
-    
-    nav{
-        position: sticky;
-        height: 10vh;
-        top: 0;
-        display: flex; 
-        justify-content: center;
-        background-color: rgba(237, 178, 0, 0.505); 
-        padding: 10px;
-        margin: 0px;
-        font-family: Arial, Helvetica, sans-serif;
-        
-        
-    }
-    nav a{
-        color: rgb(0, 0, 0); /* Muda a cor do link */
-        margin: 0 15px; 
-        padding: 12px 16px;
-        text-decoration: none;
-        font-size: 16px;
-    }
-    nav a:hover{
-        background-color: #ffffff;
-        color: black;
-    }
-    
-    main{
-        font-family:Georgia, 'Times New Roman', Times, serif;
-        font-size: 16px;
-        
-    }
-    .home{
-        background-color: #ffffff;
-        border: 1px solid rgb(237, 178, 0);;  
-        border-radius: 5px; 
-        padding: 20px; 
-        margin: 20px;
-        box-shadow: 0 3px 6px rgb(237, 178, 0);; 
-        margin-top: 0;
-       
-    }
-    
-    .caixa_ordenada{
-        background-color: #ffffff;
-        border: 1px solid rgba(237, 178, 0, 0.505);;  
-        border-radius: 5px;
-        padding: 20px; 
-        margin: 20px;
-        box-shadow: 0 3px 6px rgba(237, 178, 0, 0.505);; 
-        margin-top: 0;
-        list-style-type:upper-roman;
-    }
-    .caixa_ordenada li {
-        margin-left: 20px;
-        margin-block: 10px;
-        font-size: 1.0em;
-    
-    }
-    .caixa_nao_ordenada li:nth-child(2n + 1){
-        background-color: rgba(237, 178, 0, 0.505);
-        
-    }
-    .caixa_nao_ordenada li {
-        margin-left: 20px;
-        margin-block: 10px;
-        font-size: 1.0em;
-    
-    }
-    .caixa_nao_ordenada{
-        list-style-type:circle;
-    }
-    
-    .caixa_title{
-        background-color: #ffffff;
-        border: 1px solid rgba(237, 178, 0, 0.505);;  
-        border-radius: 5px;
-        padding: 10px; 
-        margin: 10px;
-        box-shadow: 0 3px 6px rgba(237, 178, 0, 0.505);; 
-        margin-top: 0;
-    }
-    
-    
-    footer a{
-        font-family:Georgia, 'Times New Roman', Times, serif;
-        font-size: 20px;
-        border-radius: 10px;
-        padding: 10px;
-        color: rgb(255, 255, 255); /* Muda a cor do link */
-        margin: 0px; 
-        background-color: #000000a7;
-        text-decoration: none;
-        font-size: 20px;
-        line-height: 8;
-        font-family:Georgia, 'Times New Roman', Times, serif;
-    
-    }
-    
-    
-    
-    
-    .final{
-        background-color: rgba(149, 68, 11, 0.252); 
-        text-align :center;
-        
-    }
-    .container {
-        display: flex;
-        justify-content: space-around; /* Espaço entre as caixas */
-        align-items: center;
-    }
-    .box {
-        width: 700px;
-        height: 500px;
-        border: 2px solid #ffffff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-    
-    
-    }
-    .box div div:first-child {
-        width: 700px;
-        height: 800px;
-        border: 2px solid #ffffff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .box img {
-        width: 100%;
-        height: auto; /* Imagem se adapta ao tamanho da caixa */
-        border-radius: 10px;
-    }
-    
-    
-    #fotografias h3, #video h3, #poema h3 {
-        color: rgb(237, 178, 0);;
-        font-size: 20px;
-        border-bottom: 2px solid rgb(237, 178, 0);;
-        padding-bottom: 10px;
-        margin-bottom: 20px;
-    }
-    
-    
-    .table{
-        display: flex;
-        justify-content: center;
-        table {
-            
-            width: 100%;
-            border-collapse: collapse;
-    
-    
-        
-    
-        }
-        th, td {
-            border: 1px solid rgba(237, 178, 0, 0.505);
-            padding: 8px;
-            text-align: left;
-            
-    
-        }
-        
-    }
-    .table tr{
-        font-size: 16px; 
-        font-family:Georgia, 'Times New Roman', Times, serif;
-    }
-    
-    .table tr:nth-child(2n + 1){
-        background-color: rgba(237, 178, 0, 0.123)
-    }
-    
-    
-    .poema_text pre {
-        font-size: 16px; 
-        font-family:Georgia, 'Times New Roman', Times, serif;
-    }
-    
-    
-    form {
-        background-color: #ffffff;
-        border: 1px solid rgba(237, 178, 0, 0.505);;  
-        border-radius: 5px;
-        padding: 10px; 
-        margin: 10px;
-        box-shadow: 0 3px 6px rgba(237, 178, 0, 0.505);; 
-        margin-top: 0;
-    
-    }
-    
-    .quebra_de_linha{
-        margin-bottom: 50px;
-    }
-    
-    .nomes_pontos_interesse{
-        color: rgb(237, 150, 0);
-        font-size: 16px; 
-        
-    }
-    
-    .ajuste_mapa{
-        display: flex;
-        justify-content: center;
-        
-    }
-    
-    
-    .links a{
-        color: black;
-        
-        margin: 0 15px; 
-        padding: 10px;
-        
-        
-    
-    }
-    .dropdown {
-        float: left;
-        overflow: hidden;
-      }
-      
-      .dropdown .dropbtn {
-        font-size: 16px;  
-        border: none;
-        outline: none;
-        color: rgb(0, 0, 0);
-        padding: 14px 16px;
-        background-color: inherit;
-        font-family: inherit;
-        margin: 0;
-      }
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #f9f9f9;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-      }
-      
-      .dropdown-content a {
-        float: none;
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-        text-align: left;
-      }
-      
-      .dropdown-content a:hover {
-        background-color: rgba(237, 178, 0, 0.505);
-      }
-      
-      .dropdown:hover .dropdown-content {
-        display: block;
-      }
-      .dropdown:hover .dropbtn {
-        background-color: #ffffff;
-        
-      }
-          
-    /*telemoveis*/
+* {box-sizing: border-box; padding: 0; margin: 0;}
+
+.dropbtn {
+  display: none; 
 }
 
-@media (max-width:780px){
+.dropdown{
+  height: 8vh;
+  top: 0;
+  padding: 10px;
+  margin: 0px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  
+}
+.menu {
+  display: none; /* Escondido em telas maiores */
+}
+.text_phone{
+  display: none;
+}
+
+/*telemoveis*/
+
+@media (max-width: 768px){
+
+  .city_title{
+    font-size: 60px;
+    background-color: #0000006c;
+    text-transform: uppercase;
+    display: flex; 
+    justify-content: center;
+  }
+  .titles{
+    font-size: 30px;
+    background-color: #0000006c;
 
 }
+  body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    
+    background-color: #ffffff; /* Fundo claro */
+    color: #333; /* Cor do texto */
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Para ocupar a altura total da tela */
+    overflow-x: hidden;
+  }
+
+  header {
+      background-color: #ffffff; /* Cor de fundo do cabeçalho */
+      color: white; /* Cor do texto do cabeçalho */
+      padding: 20px;
+      text-align: center;
+      
+  }
+ 
+  main {
+      flex: 1; /* Permite que o main expanda para preencher o espaço disponível */
+      padding: 20px; /* Espaçamento interno */
+  }
+
+  footer {
+      
+      text-align: center;
+      padding: 10px 0; /* Espaçamento interno */
+  }
+
+  /*index*/
+
+  nav{
+    height: 50px;
+  }
+
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    
+    display: flex;
+    justify-content: center;
+    font-size: 20px;  
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    font-family: inherit;
+    margin: 0;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(237, 178, 0, 0.505);
+    z-index: 1;
+    margin-top: 20px;
+    left: 50%;
+    
+    
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: rgba(237, 178, 0, 0.505);
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    
+  }
+  
+  .menu {
+    display: flex; /* Mostra o botão de menu */
+    justify-content: center;
+    position:static;
+    color: rgb(0, 0, 0);
+    padding: 0px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: transparent; 
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    
+  }
+
+  nav a{
+
+    font-size: 16px;
+    font-weight: bold;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+  }
+  .aside {
+    h2{
+      font-size: 18px;
+      font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+    div a{
+      font-size: 16px;
+      font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+  }
+
+  /*multimedia*/
+  #fotografias img {
+    width: 80px; /* Reduz a largura das imagens */
+    height: 60px; /* Ajusta a altura das imagens */
+  }
+
+  #fotografias iframe {
+      width: 100%; /* O iframe ocupará toda a largura disponível */
+      height: 250px; /* Diminui a altura do iframe para caber melhor */
+  }
+
+  #fotografias {
+      padding: 10px; /* Adiciona um pouco de espaço ao redor da seção */
+  }
+
+  #video {
+    display: flex;
+    flex-direction: column;
+    
+    padding: 10px;
+  }
+
+  #video iframe {
+      width: 100%;
+      max-width: 560px; /* Limita a largura máxima do vídeo */
+      height: auto;
+      aspect-ratio: 16 / 9; /* Mantém a proporção 16:9 do vídeo */
+  }
+
+    .caixa_title {
+      display: flex;              
+      justify-content: center;    /* Centraliza horizontalmente */
+      align-items: center;        /* Centraliza verticalmente  */
+      padding: 10px;             /* Adiciona um espaço interno */
+  }
+
+  .links {
+      display: flex;              /* Habilita o flexbox para os links */
+      justify-content: center;    /* Centraliza os links horizontalmente */
+      gap: 0px; 
+      font-size: 14px;                /* Espaço entre os links */
+  }
+
+  /*pontos de interesse*/
+  .text_phone{
+    display: flex;
+  }
+  .text_complete{
+    display: none;
+  }
+
+ 
+  .caixa_title{
+    font-size: 16px;
+  }
+
+  
+}
+
+/*telemovel em pe*/
+@media (orientation: portrait) {
+
+  /*index*/
+  .container {
+    display: flex; /* Usando flexbox para alinhar as imagens */
+    flex-direction: column; /* Coloca as imagens em coluna */
+    gap: 10px; /* Espaço entre as imagens */
+    padding: 10px;
+  }
+  
+  .box{
+    width: 360px;
+    height: 300px ;
+    background-color: transparent;
+  }
+
+  .box img {
+    width: 360px; /* Faz as imagens ocuparem 100% da largura da tela */
+    height: 300; /* Mantém a proporção original */
+  }
+
+  /*info*/
+
+    .table {
+      flex-direction: column; /* Alinha os elementos em coluna */
+      align-items: center; /* Centraliza os itens */
+  }
+
+  .table table {
+      width: auto; /* Define a largura automática para evitar que a tabela ultrapasse a tela */
+      display: block; /* Permite que o contêiner seja rolável */
+      overflow-x: auto; /* Habilita a rolagem horizontal, se necessário */
+  }
+
+  .table th, .table td {
+      font-size: 16px; /* Reduz o tamanho da fonte em modo retrato */
+      padding: 10px; /* Aumenta o padding para um toque mais amigável */
+      min-width: 80px; /* Largura mínima das células */
+      max-width: 150px; /* Largura máxima das células para evitar que o conteúdo estoure */
+  }
+
+  .table tr {
+      display: table-row; /* Define que as linhas são do tipo tabela */
+  }
+  /*multimedia*/
+  .poema_text pre {
+    
+    display: grid;
+    justify-content:right;
+    font-size: 14px; /* Diminui o tamanho da fonte para melhor visualização em telas pequenas */
+    
+    
+  }
+  
+  
+
+
+}
+
+/*telemovel deitado*/
+@media (orientation: landscape) {
+ 
+ 
+  /* Estilos específicos para landscape */
+ 
+
+  
+  
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -31,7 +31,7 @@ header{
 
 nav{
     position: sticky;
-    height: 10vh;
+    height: 8vh;
     top: 0;
     display: flex; 
     justify-content: center;
@@ -212,16 +212,60 @@ footer a{
 }
 
 
+
 form {
     background-color: #ffffff;
-    border: 1px solid rgba(237, 178, 0, 0.505);;  
+    border: 1px solid rgba(237, 178, 0, 0.505);
     border-radius: 5px;
-    padding: 10px; 
+    padding: 15px; 
     margin: 10px;
-    box-shadow: 0 3px 6px rgba(237, 178, 0, 0.505);; 
-    margin-top: 0;
+    box-shadow: 0 3px 6px rgba(237, 178, 0, 0.505);
+    max-width: 100%; 
 
-}
+    h3{
+        font-size: 20px;
+    }
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  select,
+  textarea {
+    width: 100%; 
+    box-sizing: border-box; 
+    margin-bottom: 15px;
+    padding: 10px; 
+    border: 1px solid rgba(237, 178, 0, 0.505); 
+    border-radius: 4px; 
+    
+  }
+  
+  label {
+    display: block; 
+    margin-bottom: 5px; 
+    font-size: 14px;
+  }
+  
+  input[type="submit"],
+  input[type="reset"] {
+    width: 100%;
+    padding: 10px; 
+    background-color: #ffe89e; 
+    color: #000000; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer;
+    margin-top: 10px; 
+  }
+  
+  input[type="submit"]:hover,
+  input[type="reset"]:hover {
+    background-color: #b4b1a9; 
+  } 
+   
+  
+  
 
 .quebra_de_linha{
     margin-bottom: 50px;
@@ -245,54 +289,11 @@ form {
     
     margin: 0 15px; 
     padding: 10px;
-    
-    
+    text-decoration: none;
+    font-size: 20px;
 
 }
-.dropdown {
-    float: left;
-    overflow: hidden;
-  }
-  
-  .dropdown .dropbtn {
-    font-size: 20px;  
-    border: none;
-    outline: none;
-    color: rgb(0, 0, 0);
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-  }
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  
-  .dropdown-content a:hover {
-    background-color: rgba(237, 178, 0, 0.505);
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  .dropdown:hover .dropbtn {
-    background-color: #ffffff;
-    
-  }
+
   
 
 
