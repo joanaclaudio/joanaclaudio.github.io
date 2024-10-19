@@ -302,7 +302,41 @@
 /*telemovel deitado*/
 /*tablets*/
 
-@media (max-width: 1024px){
+@media (max-width: 1293px){
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  select,
+  textarea {
+    max-width: 100%; 
+  }
+  form{
+    margin: 10px; 
+    max-width: 100%; 
+  }
+  .caixa_ordenada{
+    font-size: 14px;
+  }
+
+  .links a{
+    font-size: 14px;
+    text-decoration:underline;
+
+  }
+  
+
+  .city_title{
+    font-size: 60px;
+    background-color: #0000006c;
+    text-transform: uppercase;
+    display: flex; 
+    justify-content: center;
+  }
+  .titles{
+    font-size: 30px;
+    background-color: #0000006c;
+
+}
   body {
     font-family:Georgia, 'Times New Roman', Times, serif;
     
