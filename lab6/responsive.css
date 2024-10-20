@@ -21,7 +21,7 @@
 
 /*telemoveis*/
 
-@media (max-width: 800px){
+@media (max-width: 900px){
 
   input[type="text"],
   input[type="email"],
@@ -224,15 +224,7 @@
   }
 
  
-  .caixa_title{
-    font-size: 16px;
-    max-width: 100%;
-  }
 
-  .home{
-    font-size: 14px;
-    max-width: 100%;
-  }
   
   
 
@@ -302,8 +294,13 @@
 /*telemovel deitado*/
 /*tablets*/
 
-@media (max-width: 1280px){
-  
+@media (min-width: 900px) and (max-width: 1280px){
+  header{ grid-area: header-area; }
+  nav{ grid-area: nav-area; }
+  main{ grid-area: main-area; }
+  aside{ grid-area: left-area; }
+  footer{ grid-area: footer-area; }
+
   input[type="text"],
   input[type="email"],
   input[type="number"],
@@ -337,32 +334,43 @@
     font-size: 30px;
     background-color: #0000006c;
 
-}
-  body {
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    
-    background-color: #ffffff; /* Fundo claro */
-    color: #333; /* Cor do texto */
-    display: flex;
-    flex-direction: column;
-    height: 100vh; /* Para ocupar a altura total da tela */
-    overflow-x: hidden;
   }
-
-  header {
-      background-color: #ffffff; /* Cor de fundo do cabeçalho */
-      color: white; /* Cor do texto do cabeçalho */
-      padding: 20px;
-      text-align: center;
+body {
+  display: grid;
+  grid-template-columns: 2fr 3fr 2fr ; /* Largura das colunas */
+  grid-template-rows: 200px 1fr 50px; /* Altura das linhas */
+  grid-template-areas:
+      'header-area header-area header-area  '
+      'main-area main-area nav-area ' 
+      'footer-area footer-area footer-area ' ;
       
+  
+}
+  .container {
+    display: flex; /* Usando flexbox para alinhar as imagens */
+    flex-direction: column; /* Coloca as imagens em coluna */
+    gap: 10px; /* Espaço entre as imagens */
+    padding: 10px;
   }
- 
-  main {
-      flex: 1; /* Permite que o main expanda para preencher o espaço disponível */
-      padding: 20px; /* Espaçamento interno */
+  
+  .box{
+    width: 400px;
+    height: 300px ;
+    background-color: transparent;
   }
 
-  footer {
+  .box img {
+    width: 100%; /* Faz as imagens ocuparem 100% da largura da tela */
+    height: 300; /* Mantém a proporção original */
+  }
+
+
+  aside div p{
+    font-size: 20px;
+
+  }
+
+  .footer {
       
       text-align: center;
       padding: 10px 0; /* Espaçamento interno */
@@ -372,7 +380,10 @@
 
   nav{
     height: 50px;
+    border-radius: 5px;
+    
   }
+
 
   .dropdown {
     float: left;
@@ -391,14 +402,14 @@
     margin: 0;
   }
   .dropdown-content {
-    display: none;
+    display: block;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(237, 178, 0, 0.505);
     z-index: 1;
-    margin-top: 20px;
-    left: 50%;
+    margin-top: 30px;
+    left: 15%;
     
     
   }
@@ -433,6 +444,7 @@
     background-color: transparent; 
     font-family:Georgia, 'Times New Roman', Times, serif;
     
+    
   }
 
   nav a{
@@ -440,6 +452,9 @@
     font-size: 16px;
     font-weight: bold;
     font-family:Georgia, 'Times New Roman', Times, serif;
+    display: block; 
+    padding: 10px 15px;
+    transition: background-color 0.3s;
 
   }
   .aside {
@@ -487,7 +502,7 @@
       justify-content: center;    /* Centraliza horizontalmente */
       align-items: center;        /* Centraliza verticalmente  */
       padding: 10px;             /* Adiciona um espaço interno */
-  }
+    }
 
   .links {
       display: flex;              /* Habilita o flexbox para os links */
@@ -503,8 +518,6 @@
   .text_complete{
     display: none;
   }
-
- 
   .caixa_title{
     font-size: 16px;
     max-width: 100%;
@@ -514,6 +527,11 @@
     font-size: 14px;
     max-width: 100%;
   }
+  
+
+ 
+  
+
   
   
 
