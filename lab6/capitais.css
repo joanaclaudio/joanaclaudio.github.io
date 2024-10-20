@@ -228,12 +228,7 @@
         padding: 10px;
         background-color: #fafafa;
         margin-top: 0;
-    }
-    
-    .image-card.transform {
-        transform: scale(1);
-        transition: transform 0.3s ease;
-        position: static;
+        
     }
     
     .image-card.transform:hover {
@@ -248,6 +243,13 @@
         filter: grayscale(80%);
         transform: scale(1.05);
     }
+
+    .gallery p a{
+        color: black;
+    }
+
+
+    
     
 
 
