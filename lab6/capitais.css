@@ -157,7 +157,7 @@
     
     
     }
-    @media (orientation: portrait) and (max-width: 900px){
+    @media (orientation: portrait) {
         .box{
             max-width: 100px;
             height: 300px ;
