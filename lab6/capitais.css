@@ -5,15 +5,7 @@
   }
   
   
-  /*header, main, article {
-    /* centrando o texto */
-    /*display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3em;
-    
-  }
-    */
+  
   
     
 
@@ -25,7 +17,7 @@
         display:flex;
         justify-content:space-between;
         align-items: center;
-        font-size: 3em;
+        font-size: 30px;
         max-width: 100%;
         
     
@@ -161,10 +153,7 @@
       
         
     }
-    header{
-        font-size: 30px;
-
-    }
+    
     .parallax{
         height: 90vh;
         background-image: url(images/lisbon-1964164.jpg);
@@ -178,7 +167,7 @@
 
     }
     .parallax p {
-        font-size: 3rem;
+        font-size: 30px;
         font-family: sans-serif;
         color: rgb(255, 255, 255);
         background-color: #0000006c;
