@@ -293,7 +293,7 @@
 
 /*tablets e telemoveis deitados*/
 
-@media (min-width: 900px) and (max-width: 1280px){
+@media (min-width: 900px) and (max-width: 1800px){
   header{ grid-area: header-area; }
   nav{ grid-area: nav-area; }
   main{ grid-area: main-area; }
