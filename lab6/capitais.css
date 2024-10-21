@@ -263,8 +263,8 @@
     
 
 
-    /*telemoveis e tablets*/
-    @media (orientation: portrait) {
+    
+    @media (orientation: portrait){
         .box{
             max-width: 100px;
             height: 300px ;
@@ -272,7 +272,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-left: 425px;
+            margin-left: 50%;
+            margin-right: 50%;
           }
           #cidades div section{
 
@@ -320,60 +321,6 @@
         }
         .parallax p {
             font-size: 30px;
-        }
-       
-        
-    } 
-    @media (max-width: 1280px){
-        .box{
-            max-width: 100px;
-            height: 300px ;
-            background-color: transparent;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-left: 425px;
-          }
-          #cidades div section{
-
-            border-radius: 10px;
-            top: 0;
-            
-            display: flex;
-            justify-content:center;
-            align-items: center;
-            font-size: 16px;
-            background-color: rgba(237, 178, 0, 0.505);
-        
-            margin: 30px;
-            padding-right: 10px;
-            
-           
-            
-                
-    
-            div{
-                height: 100% ;
-                margin: 30px;
-                display: flex;
-                justify-content:center;
-                align-items: center;
-                text-align: center; /* Centraliza o texto */
-                
-                
-    
-            }
-            img{
-                
-                border-top-left-radius: 10px;
-                border-bottom-left-radius: 10px;
-            }
-          
-            
-        }
-        header{
-            font-size: 30px;
-
         }
         
        
