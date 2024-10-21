@@ -324,7 +324,7 @@
        
         
     } 
-    @media (min-width: 900px) and (max-width: 1280px){
+    @media (max-width: 1280px){
         .box{
             max-width: 100px;
             height: 300px ;
