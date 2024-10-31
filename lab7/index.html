@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Eventos</title>
+</head>
+<body>
+    <p onmouseover="mudarTexto()" onmouseout="reporTexto()">1. Passa por aqui!</p> <!-- onmouseover -->
+
+    <p id="texto">2. Pinta-me! <button onclick="mudarCor('red')">Red</button> 
+        <button onclick="mudarCor('green')">Green</button>
+        <button onclick="mudarCor('blue')">Blue</button>
+    </p> 
+
+    <label for="inputTexto">Experimenta escrever...</label>
+    <input type="text" name="inputTexto" id="inputTexto" keydown = "mudarFundoCaixa()">
+    
+    <br><br>
+
+
+    <label for="inputTexto">Escolha uma cor em inglês:</label>
+    <input type="text" name="inputTexto" id="inputTexto">
+    <button onclick= "mudarCorFundoPagina()">Submeter</button>
+    
+
+    
+
+    <!-- HTML já carregado! -->
+    <script src="main.js"></script>
+</body>
+</html>
