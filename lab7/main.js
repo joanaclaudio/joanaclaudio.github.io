@@ -26,6 +26,6 @@ function mudarFundoCaixa(){
 document.querySelector('#inputTexto').addEventListener('input', mudarFundoCaixa);
 
 function mudarCorFundoPagina(){
-    const cor = document.querySelector('#inputTexto').value;
+    const cor = document.querySelector('#textoCor').value;
     document.body.style.backgroundColor = cor; 
 }
