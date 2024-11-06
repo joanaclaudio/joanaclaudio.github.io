@@ -33,7 +33,7 @@
             margin: auto;
             overflow: hidden;
         }
-        #story, #features, #gallery {
+        #story, #features, #commands {
             padding: 2rem 0;
             text-align: center;
         }
@@ -60,39 +60,75 @@
             padding: 1rem;
             margin-top: 2rem;
         }
+        .highlight {
+            background-color: #3e3e5a !important;
+        }
+        .command-output {
+            background-color: #2e2e4f;
+            color: #f8c52c;
+            padding: 10px;
+            border: 1px solid #444;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-family: 'Courier New', monospace;
+        }
+        .command-output:hover {
+            background-color: #444;
+        }
+        input[type="text"] {
+            margin-top: 20px;
+            padding: 10px;
+            width: 80%;
+            border: 1px solid #444;
+            background-color: #2e2e4f;
+            color: #fff;
+        }
+        button {
+            background-color: #ffd760;
+            color: #2e2e4f;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        button:hover {
+            background-color: #e7b422;
+        }
     </style>
 </head>
 <body>
 
     <header>
         <h1>Mundos Perdidos</h1>
-        <p>Aventura. Exploração. Mistério.</p>
+        <p>Prepare-se para a aventura! Descubra mistérios, enfrente criaturas e desvende segredos.</p>
     </header>
 
     <nav>
         <a href="#story">História</a>
         <a href="#features">Características</a>
-        
+        <a href="#commands">Comandos</a>
     </nav>
 
     <section id="story" class="container">
         <h2>História</h2>
-        <p>Em "Mundos Perdidos", você embarca em uma jornada para um mundo esquecido pelo tempo. Exploradores dizem que ruínas escondem segredos antigos e criaturas mágicas. Será você o próximo a descobrir o que esses mundos têm a oferecer?</p>
+        <p>Em "Mundos Perdidos", você se encontra em um mundo repleto de mistérios, monstros e magia. Em sua jornada, você explorará florestas encantadas, montanhas nevadas e cavernas sombrias. Será que você será o herói que desvendou todos os segredos escondidos neste mundo?</p>
     </section>
 
     <section id="features" class="container">
         <h2>Características</h2>
-        <div class="feature">
-            <h3>Mundo Aberto</h3>
-            <p>Explore vastos territórios, de florestas sombrias a montanhas geladas, em um mundo rico em detalhes e perigos.</p>
+        <div class="feature" id="feature1">
+            <h3>Exploração Interativa</h3>
+            <p>Vá onde seus pés te levarem! Escolha seu caminho e descubra os segredos que o mundo tem a oferecer.</p>
         </div>
-        <div class="feature">
-            <h3>Personagens Personalizáveis</h3>
-            <p>Crie seu herói, escolha sua classe e habilidades para enfrentar os desafios de Mundos Perdidos.</p>
+        <div class="feature" id="feature2">
+            <h3>Magia e Combate</h3>
+            <p>Comande feitiços, lute contra criaturas poderosas e salve o reino de uma ameaça misteriosa.</p>
         </div>
-        <div class="feature">
-            <h3>Multiplayer Online</h3>
-            <p>Junte-se a amigos ou outros jogadores ao redor do mundo para enfrentar as criaturas mais poderosas.</p>
+        <div class="feature" id="feature3">
+            <h3>Multiplayer</h3>
+            <p>Jogue com amigos ou encontre novos aliados para compartilhar a aventura e derrotar chefões.</p>
         </div>
     </section>
 
@@ -103,3 +139,7 @@
 
 </body>
 </html>
+
+
+
+
