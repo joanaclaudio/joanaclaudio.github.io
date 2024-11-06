@@ -29,3 +29,13 @@ function mudarCorFundoPagina(){
     const cor = document.querySelector('#textoCor').value;
     document.body.style.backgroundColor = cor; 
 }
+let counter = 0;
+const heading = document.querySelector('.number');
+function contagem (){
+    
+    counter++;
+    heading.innerHTML = counter;
+   
+    const button = document.querySelector('button');
+    button.addEventListener('click', count);
+}
