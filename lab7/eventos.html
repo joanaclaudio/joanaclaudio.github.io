@@ -1,143 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mundos Perdidos - Jogo de Aventura e Fantasia</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #1e1e2f;
-            color: #eee;
-        }
-        header {
-            background-color: #2b2b3b;
-            color: #f8c52c;
-            padding: 1.5rem;
-            text-align: center;
-        }
-        nav {
-            text-align: center;
-            margin-top: 1rem;
-        }
-        nav a {
-            color: #f8c52c;
-            margin: 0 1rem;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .container {
-            width: 85%;
-            margin: auto;
-            overflow: hidden;
-        }
-        #story, #features, #commands {
-            padding: 2rem 0;
-            text-align: center;
-        }
-        h2 {
-            color: #f8c52c;
-        }
-        .feature {
-            margin: 1rem;
-            padding: 1rem;
-            border: 1px solid #444;
-            background-color: #2e2e4f;
-            display: inline-block;
-            width: 30%;
-        }
-        .gallery img {
-            width: 30%;
-            margin: 1%;
-            border: 3px solid #444;
-        }
-        footer {
-            background-color: #2b2b3b;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            margin-top: 2rem;
-        }
-        .highlight {
-            background-color: #3e3e5a !important;
-        }
-        .command-output {
-            background-color: #2e2e4f;
-            color: #f8c52c;
-            padding: 10px;
-            border: 1px solid #444;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            font-family: 'Courier New', monospace;
-        }
-        .command-output:hover {
-            background-color: #444;
-        }
-        input[type="text"] {
-            margin-top: 20px;
-            padding: 10px;
-            width: 80%;
-            border: 1px solid #444;
-            background-color: #2e2e4f;
-            color: #fff;
-        }
-        button {
-            background-color: #ffd760;
-            color: #2e2e4f;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-            font-size: 16px;
-            margin: 10px;
-            border-radius: 10px;
-        }
-        button:hover {
-            background-color: #e7b422;
-        }
-    </style>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mundos Perdidos - Jogo de Aventura e Fantasia</title>
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
 
-    <header>
-        <h1>Mundos Perdidos</h1>
-        <p>Prepare-se para a aventura! Descubra mistérios, enfrente criaturas e desvende segredos.</p>
-    </header>
+        <header>
+            <h1>Mundos Perdidos</h1>
+            <p>Prepare-se para a aventura! Descubra mistérios, enfrente criaturas e desvende segredos.</p>
+        </header>
 
-    <nav>
-        <a href="#story">História</a>
-        <a href="#features">Características</a>
-        <a href="#commands">Comandos</a>
-    </nav>
+        <nav>
+            <a href="#story">História</a>
+            <a href="#features">Características</a>
+            <a href="#commands">Comandos</a>
+        </nav>
 
-    <section id="story" class="container">
-        <h2>História</h2>
-        <p>Em "Mundos Perdidos", você se encontra em um mundo repleto de mistérios, monstros e magia. Em sua jornada, você explorará florestas encantadas, montanhas nevadas e cavernas sombrias. Será que você será o herói que desvendou todos os segredos escondidos neste mundo?</p>
-    </section>
+        <section id="story" class="container">
+            <h2>História</h2>
+            <p>Em "Mundos Perdidos", você se encontra em um mundo repleto de mistérios, monstros e magia. Em sua jornada, você explorará florestas encantadas, montanhas nevadas e cavernas sombrias. Será que você será o herói que desvendou todos os segredos escondidos neste mundo?</p>
+        </section>
 
-    <section id="features" class="container">
-        <h2>Características</h2>
-        <div class="feature" id="feature1">
-            <h3>Exploração Interativa</h3>
-            <p>Vá onde seus pés te levarem! Escolha seu caminho e descubra os segredos que o mundo tem a oferecer.</p>
-        </div>
-        <div class="feature" id="feature2">
-            <h3>Magia e Combate</h3>
-            <p>Comande feitiços, lute contra criaturas poderosas e salve o reino de uma ameaça misteriosa.</p>
-        </div>
-        <div class="feature" id="feature3">
-            <h3>Multiplayer</h3>
-            <p>Jogue com amigos ou encontre novos aliados para compartilhar a aventura e derrotar chefões.</p>
-        </div>
-    </section>
+        <section id="features" class="container">
+            <h2>Características</h2>
+            <button>
+                <h3>Exploração Interativa (Carrega duas vezes em cima)</h3>
+                <p>Vá onde seus pés te levarem! Escolha seu caminho e descubra os segredos que o mundo tem a oferecer.</p>
+            </button>
+            <button id = "magia" class="shake-effect">
+                <h3>Magia e Combate</h3>
+                <p>Comande feitiços, lute contra criaturas poderosas e salve o reino de uma ameaça misteriosa.</p>
+            </button>
+            <button class= "multiplayer">
+                <h3>Multiplayer</h3>
+                <p>Jogue com amigos ou encontre novos aliados para compartilhar a aventura e derrotar chefões.</p>
+            </button>
+            <br><br>
+        </section>
+
+        <section id="commands" class="container">
+            <h2>Comandos</h2>
+            <p>Digite o que você deseja fazer no jogo:</p>
+            <form>
+                <input type="text" placeholder="Digite um comando">
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
 
 
-    <footer>
-        <p>&copy; 2024 Mundos Perdidos. Todos os direitos reservados.</p>
-    </footer>
+        <footer>
+            <p>&copy; 2024 Mundos Perdidos. Todos os direitos reservados.</p>
+        </footer>
 
-</body>
+        <!-- HTML já carregado! -->
+        <script src="script.js"></script>
+    </body>
 </html>
 
 
