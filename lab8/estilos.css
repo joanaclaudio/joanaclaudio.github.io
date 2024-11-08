@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e2f;
+    color: #eee;
+}
+header {
+    background-color: #2b2b3b;
+    color: #f8c52c;
+    padding: 1.5rem;
+    text-align: center;
+}
+nav {
+    text-align: center;
+    margin-top: 1rem;
+}
+nav a {
+    color: #f8c52c;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+.container {
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+}
+#story, #features, #commands {
+    padding: 2rem 0;
+    text-align: center;
+}
+h2 {
+    color: #f8c52c;
+}
+
+footer {
+    background-color: #2b2b3b;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+.highlight {
+    background-color: #3e3e5a !important;
+}
+.command-output {
+    background-color: #2e2e4f;
+    color: #f8c52c;
+    padding: 10px;
+    border: 1px solid #444;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Courier New', monospace;
+}
+.command-output:hover {
+    background-color: #444;
+}
+input[type="text"] {
+    margin-top: 20px;
+    padding: 10px;
+    width: 80%;
+    border: 1px solid #444;
+    background-color: #2e2e4f;
+    color: #fff;
+}
+button {
+    background-color: #ffd760;
+    color: #2e2e4f;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+    border-radius: 10px;
+}
+button:hover {
+    background-color: #e7b422;
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.shake-effect {
+animation: shake 0.5s;
+animation-iteration-count: infinite;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Eventos</title>
+</head>
+<body>
+    <nav> 
+        <a href="/index.html">Página Principal</a>
+
+    </nav>
+    <p onmouseover="mudarTexto()" onmouseout="reporTexto()">1. Passa por aqui!</p> <!-- onmouseover -->
+
+    <p id="texto">2. Pinta-me! 
+        <button data-color="red">Red</button> 
+        <button data-color="green">Green</button>
+        <button data-color="blue">Blue</button>
+    </p> 
+
+    <label for="inputTexto">3. Experimenta escrever...</label>
+    <input type="text" name="inputTexto" id="inputTexto" keydown = "mudarFundoCaixa()">
+    
+    <br><br>
+
+
+    <label for="transporte">4. Escolha uma cor:</label>
+    <select name="transporte" id="transporte">
+        <option  value ="white" >White</option>
+        <option  value="red" >Red</option>
+        <option value="blue" >Blue</option>
+    </select>
+    
+
+    <br><br>
+
+    <div style="display: flex; align-items: center; gap: 10px;">
+        <p>5.</p>
+        <button onclick = "contagem()">Conta!</button>
+        <div class="number">0</div>
+    </div>
+
+    <form id="meuFormulario">
+        <for="inputTexto">6. </label>
+        <input type="text" name="txt" id="txt">
+        <label for="txt"></label>
+        <input type="number" name="inputNumber" id="inputNumber">
+        <button type="submit">Submit</button>
+    </form>
+      
+      <!-- Aqui a mensagem será exibida após o envio -->
+    <div id="mensagem" style="margin-top: 10px;"></div>
+
+    <p>Automatic Counter: <span id="counterAuto">0</span></p>
+
+    
+
+    <!-- HTML já carregado! -->
+    <script src="main.js"></script>
+</body>
+</html>
