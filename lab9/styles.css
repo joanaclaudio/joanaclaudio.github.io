@@ -3,3 +3,26 @@ header {
     justify-content:space-between;
     align-items: center;
 }
+
+
+#produtos {
+    display:grid;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.box{
+    
+    
+    background-color: #c2bfbf60;
+    border: 1px solid rgba(0, 0, 0, 0.505);;  
+    border-radius: 5px;
+    padding: 20px; 
+    margin: 20px;
+    box-shadow: 0 3px 6px rgba(70, 70, 70, 0.505);; 
+    border-radius: 10px;
+        
+}
+.box2{
+  
+}
