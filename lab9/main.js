@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => { 
     carregarProdutos();
+    atualizaCesto();
     
 });
 
@@ -9,7 +10,7 @@ function carregarProdutos(){
         
     const produtosContainer = document.getElementById('produtos');
     const cestoContainer = document.getElementById('cesto');
-
+    let listaCesto = JSON.parse(localStorage.getItem('lista'));
 
     produtos.forEach(produto => {
         const article = document.createElement('article');
@@ -18,7 +19,7 @@ function carregarProdutos(){
         const p1 = document.createElement('p')
         const p2 = document.createElement('p')
         const button = document.createElement('button')
-        
+        const quebraLinha = document.createElement('br')
         h2.textContent = `${produto.title}`;
 
         article.appendChild(h2);
@@ -29,27 +30,58 @@ function carregarProdutos(){
         img.width = 100;
         article.appendChild(img);
 
-        p1.textContent = `Custo total: ${produto.price}`;
+        p1.textContent = `Custo total: ${produto.price} €`;
 
         article.appendChild(p1)
-
         p2.textContent = `${produto.description}`
+        
         p2.classList.add('box')
+            
         article.appendChild(p2)
 
+       
+        button.textContent = `+ Adicionar ao Cesto`;
         button.onclick = () => {
-            adicionarAoCesto(produto.id);
+           listaCesto.push(article);
+           localStorage.setItem('lista', JSON.stringify(listaCesto));
+           listaCesto = JSON.parse(localStorage.getItem('lista'));
         };
-        button.textContent = `+ Adicionar ao Cesto`
+        article.appendChild(button);
+        
 
-        article.appendChild(button)
+        article.classList.add('article');
 
-        article.classList.add('box2')
+        h2.classList.add('titulo');
+
+        img.classList.add('img');
+
+        p1.classList.add('p1');
+        p2.classList.add('p2');
+
+        button.classList.add('button')
+
 
         
         produtosContainer.append(article);
+        
+        produtosContainer.classList.add('produtosOrganizados')
 
     });
+}
+
+function atualizaCesto(){
+    listaCesto.forEach(produto => {adicionarAoCesto(produto)})
+}
+function adicionarAoCesto(produto){
+    produto.button.textContent =  `- Remove do Cesto`;
+    button.onclick = () => {
+        const index = listaCesto.indexOf(produto);
+
+        listaCesto.splice(index, 1);
+        localStorage.setItem('lista', JSON.stringify(listaCesto));
+    
+    }
+    cestoContainer.append(produto);
 }
 
 

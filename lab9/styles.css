@@ -1,14 +1,27 @@
+* {box-sizing: border-box; padding: 5px; margin: 5px;}
+
 header {
     display:flex;
     justify-content:space-between;
     align-items: center;
+    background-color: rgb(213, 88, 255);
+    
+}
+
+h1{
+    font-size: 40px;
+}
+
+nav{
+    font-size: 20px;
 }
 
 
 #produtos {
-    display:grid;
+    display:flex;
     justify-content:space-around;
-    align-items: center;
+    align-items:baseline;
+    
 }
 
 .box{
@@ -23,6 +36,50 @@ header {
     border-radius: 10px;
         
 }
-.box2{
-  
+
+
+
+
+.titulo{
+    font-size: 18px;
 }
+
+.article{
+    background-color: rgb(255, 255, 202);
+    width: 200px;
+    
+    box-shadow: 0 5px 6px rgba(70, 70, 70, 0.505);
+    border-radius: 10px; 
+    background-color: rgba(213, 88, 255, 0.155);
+}
+.img{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    margin-left: 40px;
+}
+.p2{
+    font-size: 7px;
+}
+.p1{
+    font-size: 17px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.produtosOrganizados{
+    display: flex; /* Use flexbox for side-by-side layout */
+    flex-wrap:wrap; /* Wrap items to the next line when full */
+    justify-content: space-between; /* Distribute space evenly between items */
+    margin: 0 auto; /* Center the container horizontally */
+    width: fit-content; /* Allow container to adjust to product width */
+    /* Optional: Add padding/margin for spacing between container and edges */
+    padding: 40px
+}
+
+.button{
+    margin-left: 25px;
+}
+
+
+
