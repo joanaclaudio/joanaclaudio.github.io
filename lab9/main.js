@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 const cestoContainer = document.getElementById('cesto');
 const produtosContainer = document.getElementById('produtos');
 let listaCesto = JSON.parse(localStorage.getItem('lista')) || [];
+let count = 0;
 
 // Selecionar os elementos da página
 function carregarProdutos(){
@@ -71,6 +72,7 @@ function carregarProdutos(){
     });
 }
 
+
 function adicionarAoCesto(produto){
 
     const article = document.createElement('article');
@@ -79,6 +81,7 @@ function adicionarAoCesto(produto){
     const p1 = document.createElement('p')
     const p2 = document.createElement('p')
     const button = document.createElement('button')
+    
     const idUnico = `item-${produto.id}`;
     article.id = idUnico;
 
@@ -93,24 +96,37 @@ function adicionarAoCesto(produto){
     article.appendChild(img);
 
     p1.textContent = `Custo total: ${produto.price} €`;
-
-    article.appendChild(p1)
-    p2.textContent = `${produto.description}`
+    count += parseFloat(produto.price);
     
-    p2.classList.add('box')
-        
-    article.appendChild(p2)
+    article.appendChild(p1)
+   
+    
+
 
    
     button.textContent = `- Remover do Cesto`;
     button.onclick = () => {
        removerDoCesto(produto, idUnico);
+       count -= parseFloat(produto.price);
     };
     article.appendChild(button);
     
+    article.classList.add('article');
+
+    h2.classList.add('titulo');
+
+    img.classList.add('img');
+
+    p1.classList.add('p1');
+    p2.classList.add('p2');
+
+    button.classList.add('button')
 
     cestoContainer.append(article);
+    cestoContainer.classList.add('produtosOrganizados')
+
 }
+
 
 function removerDoCesto(produto, idUnico) {
     // Remover da listaCesto
@@ -125,10 +141,16 @@ function removerDoCesto(produto, idUnico) {
     const itemARemover = document.getElementById(idUnico);
     if (itemARemover) {
         itemARemover.remove();
+        
     } else {
         console.error('Elemento não encontrado no DOM:', idUnico);
     }
+
 }
+
+cestoContainer.append(`Custo Total:${count}`)
+
+
 
 
 

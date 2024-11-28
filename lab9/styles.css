@@ -23,6 +23,12 @@ nav{
     align-items:baseline;
     
 }
+#cesto{
+    display:flex;
+    justify-content:space-around;
+    align-items:baseline;
+    background-color: rgb(213, 88, 255);
+}
 
 .box{
     
@@ -80,6 +86,7 @@ nav{
 .button{
     margin-left: 25px;
 }
+
 
 
 
