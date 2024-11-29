@@ -148,7 +148,7 @@ function removerDoCesto(produto, idUnico) {
 
 }
 
-cestoContainer.append(`Custo Total:${count}`)
+cestoContainer.append(`Custo Total:${count}`) // não aparece o valor do count 
 
 
 
