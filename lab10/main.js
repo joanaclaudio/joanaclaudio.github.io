@@ -16,21 +16,24 @@ function carregarDados() {
             carregarProdutos(produtos); // Exibe todos os produtos inicialmente
             ordenarProdutos(produtos);
             pesquisarProdutos(produtos);
+            // Carregar categorias
+            fetch('https://deisishop.pythonanywhere.com/categories')
+                    .then(response => response.json())
+                    .then(data => {
+                        categorias = data; // Armazena as categorias
+                        carregarCategorias(categorias, produtos); 
+                    })
+                    .catch(error => {
+                        console.error('Erro ao carregar as categorias:', error);
+                    });
         })
         .catch(error => {
             console.error('Erro ao carregar os produtos:', error);
         });
+        
+    
 
-    // Carregar categorias
-    fetch('https://deisishop.pythonanywhere.com/categories')
-        .then(response => response.json())
-        .then(data => {
-            categorias = data; // Armazena as categorias
-            carregarCategorias(categorias, produtos); 
-        })
-        .catch(error => {
-            console.error('Erro ao carregar as categorias:', error);
-        });
+      
        
 }
 
