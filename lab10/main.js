@@ -1,27 +1,34 @@
 document.addEventListener('DOMContentLoaded', () => { 
-    carregarProdutos();
-    
+    carregarDados(); // Chamada principal para carregar tudo
 });
 
-fetch('https://deisishop.pythonanywhere.com/products')
-    .then(response => response.json())
-    .then(produtos => {
-        console.log(produtos);
-        carregarProdutos(produtos); 
-    })
-    .catch(error => {
-        console.error('Erro ao carregar os produtos:', error);
-    });
+// Função principal para carregar produtos e categorias
+function carregarDados() {
+    let produtos = [];
+    let categorias = [];
 
-fetch('https://deisishop.pythonanywhere.com/categories')
-    .then(response => response.json())
-    .then(categorias => {
-        console.log(categorias);
-        carregarCategorias(categorias, produtos); 
-    })
-    .catch(error => {
-        console.error('Erro ao carregar os produtos:', error);
-    });
+    // Carregar produtos
+    fetch('https://deisishop.pythonanywhere.com/products')
+        .then(response => response.json())
+        .then(data => {
+            produtos = data; // Armazena os produtos
+            carregarProdutos(produtos); // Exibe todos os produtos inicialmente
+        })
+        .catch(error => {
+            console.error('Erro ao carregar os produtos:', error);
+        });
+
+    // Carregar categorias
+    fetch('https://deisishop.pythonanywhere.com/categories')
+        .then(response => response.json())
+        .then(data => {
+            categorias = data; // Armazena as categorias
+            carregarCategorias(categorias, produtos); // Carrega o select de categorias
+        })
+        .catch(error => {
+            console.error('Erro ao carregar as categorias:', error);
+        });
+}
 
 
 const cestoContainer = document.getElementById('cesto');
