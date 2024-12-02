@@ -1,6 +1,6 @@
 *{
     font-family: sans-serif;
-    padding: 0px; 
+    padding: 2px; 
     margin: 0px;
 }
 
@@ -36,7 +36,27 @@ a{
     color: rgb(255, 255, 255);
 }
 
-
+#desconto{
+    display:grid;
+    justify-content:center;
+    width: 100%; 
+    text-align: center; 
+     
+    font-weight: bold; 
+    font-size: 1.2em; 
+    background-color: rgba(168, 98, 182, 0.671);
+    
+}
+#desconto1{
+    display:grid;
+    justify-content:center;
+    width: 100%; 
+    text-align: center; 
+     
+    font-weight: bold; 
+    font-size: 1.2em; 
+    background-color: rgba(168, 98, 182, 0.671);
+}
 #produtos {
     display:flex;
     justify-content:space-around;
