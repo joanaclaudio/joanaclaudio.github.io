@@ -148,7 +148,7 @@ function adicionarAoCesto(produto){
 
     h2.classList.add('titulo');
 
-    img.classList.add('img');
+    img.classList.add('img2');
 
     p1.classList.add('p1');
     p2.classList.add('p2');

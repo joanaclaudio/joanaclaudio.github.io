@@ -94,6 +94,9 @@ a{
     padding: 15px;
 }
 .article2{
+    display:grid;
+    justify-content: center;
+    
     background-color: rgb(255, 255, 202);
     width: 250px;
     height: 200px;
@@ -108,6 +111,12 @@ a{
     justify-content:center;
     align-items: center;
     margin-left: 75px;
+}
+.img2{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    margin-left: 30px;
 }
 .p2{
     font-size: 13px;
