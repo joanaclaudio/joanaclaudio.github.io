@@ -190,7 +190,7 @@ function adicionarAoCesto(produto){
 
 }
 
-
+const descontoContainer = document.getElementById('desconto1'); 
 function removerDoCesto(produto, idUnico) {
     // Remover da listaCesto
     const index = listaCesto.findIndex(item => item.title === produto.title);
@@ -209,6 +209,10 @@ function removerDoCesto(produto, idUnico) {
         console.error('Elemento não encontrado no DOM:', idUnico);
     }
     atualizarCustoTotal();
+    if(listaCesto.length === 0){
+        descontoContainer.innerHTML = ''
+
+    }
 
 }
 
@@ -286,7 +290,7 @@ function pesquisarProdutos(produtos) {
         carregarProdutos(produtosFiltrados);
     });
 }
-const descontoContainer = document.getElementById('desconto1'); 
+
 
 function carregarDescontos() {
     
