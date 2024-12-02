@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => { 
     carregarDados(); // Chamada principal para carregar tudo
+   
 });
 
 // Função principal para carregar produtos e categorias
@@ -13,6 +14,8 @@ function carregarDados() {
         .then(data => {
             produtos = data; // Armazena os produtos
             carregarProdutos(produtos); // Exibe todos os produtos inicialmente
+            ordenarProdutos(produtos);
+            pesquisarProdutos(produtos);
         })
         .catch(error => {
             console.error('Erro ao carregar os produtos:', error);
@@ -23,11 +26,12 @@ function carregarDados() {
         .then(response => response.json())
         .then(data => {
             categorias = data; // Armazena as categorias
-            carregarCategorias(categorias, produtos); // Carrega o select de categorias
+            carregarCategorias(categorias, produtos); 
         })
         .catch(error => {
             console.error('Erro ao carregar as categorias:', error);
         });
+       
 }
 
 
@@ -227,6 +231,52 @@ function carregarCategorias(categorias, produtos){
         }
     })
 
+}
+const ordemContainer = document.getElementById('ordem');
+function ordenarProdutos(produtos){
+
+    const option1 = document.createElement('option');
+    const option2 = document.createElement('option');
+    const option3 = document.createElement('option');
+    option1.textContent = 'Ordenar pelo preço'
+    ordemContainer.appendChild(option1);
+    option2.textContent = 'Preço Decrescente'
+    ordemContainer.appendChild(option2);
+    option3.textContent = 'Preço Crescente'
+    ordemContainer.appendChild(option3);
+
+    ordemContainer.addEventListener('change', () => {
+        const ordemSelecionada = ordemContainer.value;
+
+        // Ordena com base na opção selecionada
+        if (ordemSelecionada === 'Preço Crescente') {
+            produtos.sort((a, b) => a.price - b.price); // Ordem crescente
+        } else if (ordemSelecionada === 'Preço Decrescente') {
+            produtos.sort((a, b) => b.price - a.price); // Ordem decrescente
+        }
+
+        produtosContainer.innerHTML = '';
+        carregarProdutos(produtos);
+    });
+    
+}
+const inputPesquisa = document.getElementById('procura');
+
+function pesquisarProdutos(produtos) {
+    // Adiciona o evento ao input
+    inputPesquisa.addEventListener('input', () => {
+        const termoPesquisa = inputPesquisa.value.toLowerCase(); // Converte o texto para minúsculas
+        produtosContainer.innerHTML = ''; // Limpa os produtos exibidos
+
+        // Filtra os produtos com base no título ou descrição
+        const produtosFiltrados = produtos.filter(produto =>
+            produto.title.toLowerCase().includes(termoPesquisa) ||
+            produto.description.toLowerCase().includes(termoPesquisa)
+        );
+
+        // Recarrega os produtos filtrados
+        carregarProdutos(produtosFiltrados);
+    });
 }
 
 
