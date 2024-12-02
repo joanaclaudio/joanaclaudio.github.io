@@ -6,6 +6,22 @@ const cestoContainer = document.getElementById('cesto');
 const produtosContainer = document.getElementById('produtos');
 let listaCesto = JSON.parse(localStorage.getItem('lista')) || [];
 let count = 0;
+const custoTotalContainer = document.getElementById('custo-total');
+
+function atualizarCustoTotal() {
+    const existente = document.getElementById('custo-total');
+    if (existente) {
+        existente.remove();
+    }
+
+    // Cria um novo elemento ou atualiza o texto
+    const custoTotalContainer = document.createElement('p');
+    custoTotalContainer.id = 'custo-total';
+    custoTotalContainer.textContent = `Custo Total: ${count.toFixed(2)}€`;
+
+    // Adiciona o elemento ao final do cestoContainer
+    cestoContainer.appendChild(custoTotalContainer);
+}
 
 // Selecionar os elementos da página
 function carregarProdutos(){
@@ -37,7 +53,7 @@ function carregarProdutos(){
         p2.classList.add('box')
             
         article.appendChild(p2)
-
+        article.appendChild(quebraLinha)
        
         button.textContent = `+ Adicionar ao Cesto`;
         
@@ -81,6 +97,7 @@ function adicionarAoCesto(produto){
     const p1 = document.createElement('p')
     const p2 = document.createElement('p')
     const button = document.createElement('button')
+    const quebraLinha = document.createElement('br')
     
     const idUnico = `item-${produto.id}`;
     article.id = idUnico;
@@ -97,8 +114,10 @@ function adicionarAoCesto(produto){
 
     p1.textContent = `Custo total: ${produto.price} €`;
     count += parseFloat(produto.price);
+    atualizarCustoTotal();
     
     article.appendChild(p1)
+    article.appendChild
    
     
 
@@ -108,6 +127,7 @@ function adicionarAoCesto(produto){
     button.onclick = () => {
        removerDoCesto(produto, idUnico);
        count -= parseFloat(produto.price);
+        atualizarCustoTotal(); 
     };
     article.appendChild(button);
     
@@ -124,6 +144,7 @@ function adicionarAoCesto(produto){
 
     cestoContainer.append(article);
     cestoContainer.classList.add('produtosOrganizados')
+    atualizarCustoTotal();
 
 }
 
@@ -145,10 +166,10 @@ function removerDoCesto(produto, idUnico) {
     } else {
         console.error('Elemento não encontrado no DOM:', idUnico);
     }
+    atualizarCustoTotal();
 
 }
 
-cestoContainer.append(`Custo Total:${count}`) 
 
 
 

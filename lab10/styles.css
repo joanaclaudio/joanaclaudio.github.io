@@ -1,4 +1,8 @@
-
+*{
+    font-family: sans-serif;
+    padding: 0px; 
+    margin: 0px;
+}
 
 header{
     position: sticky;
@@ -7,17 +11,20 @@ header{
     justify-content: space-between;
     align-items: center;
     background-color: rgb(98, 0, 130);
+    height: 80px;
+    
     
 }
 
 h1{
     font-size: 40px;
     color: white;
+    margin-left: 10px;
 }
 
 nav{
     font-size: 20px;
-    
+    margin-right: 10px;
 }
 a{
     text-decoration: none;
@@ -32,10 +39,21 @@ a{
     
 }
 #cesto{
-    display:flex;
-    justify-content:space-around;
-    align-items:baseline;
-    background-color: rgb(213, 88, 255);
+    
+    display: flex;
+    flex-wrap: wrap; /* Permite que os produtos "quebrem" para a próxima linha, se necessário */
+    gap: 10px; /* Espaço entre os produtos */
+    justify-content: flex-start; /* Alinha os produtos à esquerda */
+    align-items: flex-start; /* Garante alinhamento superior */
+    position: relative; /* Para posicionar o custo total abaixo */
+    background-color: rgb(98, 0, 130);
+}
+#custo-total {
+    width: 100%; 
+    text-align: center; 
+    margin-top: 10px; 
+    font-weight: bold; 
+    font-size: 1.2em; 
 }
 
 .box{
@@ -44,8 +62,8 @@ a{
     background-color: #c2bfbf60;
     border: 1px solid rgba(0, 0, 0, 0.505);;  
     border-radius: 5px;
-    padding: 20px; 
-    margin: 20px;
+    padding: 10px; 
+    margin: 100;
     box-shadow: 0 3px 6px rgba(70, 70, 70, 0.505);; 
     border-radius: 10px;
         
@@ -55,16 +73,21 @@ a{
 
 
 .titulo{
-    font-size: 18px;
+    font-size: 14px;
+    display:flex;
+    justify-content:center;
+    align-items:center
 }
 
 .article{
     background-color: rgb(255, 255, 202);
     width: 200px;
-    
+    height:290px;
+    margin: 10px;
     box-shadow: 0 5px 6px rgba(70, 70, 70, 0.505);
     border-radius: 10px; 
-    background-color: rgba(213, 88, 255, 0.155);
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
 }
 .img{
     display:flex;
@@ -73,7 +96,7 @@ a{
     margin-left: 40px;
 }
 .p2{
-    font-size: 7px;
+    font-size: 5px;
 }
 .p1{
     font-size: 17px;
@@ -93,6 +116,7 @@ a{
 
 .button{
     margin-left: 25px;
+    padding: 3px;   
 }
 
 
