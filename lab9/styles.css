@@ -80,9 +80,23 @@ a{
 }
 
 .article{
+    display:grid;
+    justify-content: center;
     background-color: rgb(255, 255, 202);
-    width: 200px;
-    height:290px;
+    width: 250px;
+    height:470px;
+    margin: 10px;
+    box-shadow: 0 5px 6px rgba(70, 70, 70, 0.505);
+    border-radius: 10px; 
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+}
+.article2{
+    display:grid;
+    justify-content: center;
+    background-color: rgb(255, 255, 202);
+    width: 250px;
+    height:200px;
     margin: 10px;
     box-shadow: 0 5px 6px rgba(70, 70, 70, 0.505);
     border-radius: 10px; 
@@ -93,10 +107,10 @@ a{
     display:flex;
     justify-content:center;
     align-items: center;
-    margin-left: 40px;
+    margin-left: 75px;
 }
 .p2{
-    font-size: 5px;
+    font-size: 10px;
 }
 .p1{
     font-size: 17px;
@@ -115,8 +129,8 @@ a{
 }
 
 .button{
-    margin-left: 25px;
-    padding: 3px;   
+    
+    padding: 1px;   
 }
 
 

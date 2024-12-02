@@ -131,7 +131,7 @@ function adicionarAoCesto(produto){
     };
     article.appendChild(button);
     
-    article.classList.add('article');
+    article.classList.add('article2');
 
     h2.classList.add('titulo');
 

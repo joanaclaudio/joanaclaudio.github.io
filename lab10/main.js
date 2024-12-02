@@ -2,6 +2,18 @@ document.addEventListener('DOMContentLoaded', () => {
     carregarProdutos();
     
 });
+
+fetch('https://deisishop.pythonanywhere.com/products')
+    .then(response => response.json())
+    .then(produtos => {
+        console.log(produtos);
+        carregarProdutos(produtos); 
+    })
+    .catch(error => {
+        console.error('Erro ao carregar os produtos:', error);
+    });
+
+
 const cestoContainer = document.getElementById('cesto');
 const produtosContainer = document.getElementById('produtos');
 let listaCesto = JSON.parse(localStorage.getItem('lista')) || [];
@@ -24,7 +36,8 @@ function atualizarCustoTotal() {
 }
 
 // Selecionar os elementos da página
-function carregarProdutos(){
+function carregarProdutos(produtos){
+    
     
 
     produtos.forEach(produto => {
@@ -131,7 +144,7 @@ function adicionarAoCesto(produto){
     };
     article.appendChild(button);
     
-    article.classList.add('article');
+    article.classList.add('article2');
 
     h2.classList.add('titulo');
 
