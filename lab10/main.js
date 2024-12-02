@@ -13,13 +13,23 @@ fetch('https://deisishop.pythonanywhere.com/products')
         console.error('Erro ao carregar os produtos:', error);
     });
 
+fetch('https://deisishop.pythonanywhere.com/categories')
+    .then(response => response.json())
+    .then(categorias => {
+        console.log(categorias);
+        carregarCategorias(categorias, produtos); 
+    })
+    .catch(error => {
+        console.error('Erro ao carregar os produtos:', error);
+    });
+
 
 const cestoContainer = document.getElementById('cesto');
 const produtosContainer = document.getElementById('produtos');
 let listaCesto = JSON.parse(localStorage.getItem('lista')) || [];
 let count = 0;
 const custoTotalContainer = document.getElementById('custo-total');
-
+let listaProdutos = JSON.parse(localStorage.getItem('lista')) || [];
 function atualizarCustoTotal() {
     const existente = document.getElementById('custo-total');
     if (existente) {
@@ -182,6 +192,37 @@ function removerDoCesto(produto, idUnico) {
     atualizarCustoTotal();
 
 }
+
+const categoriasContainer = document.getElementById('categoria');
+function carregarCategorias(categorias, produtos){
+        const option1 = document.createElement('option');
+        option1.textContent = 'Todas as categorias';
+
+        categoriasContainer.appendChild(option1)
+        categorias.forEach(categoria => {
+        const option = document.createElement('option');
+        option.textContent = categoria;
+        categoriasContainer.appendChild(option);
+
+        
+    });
+    categoriasContainer.addEventListener('change', () => {
+        const categoriaSelecionada = categoriasContainer.value;  
+
+           
+            produtosContainer.innerHTML = '';
+        if (categoriaSelecionada === 'Todas as categorias') {
+            carregarProdutos(produtos);  
+        } else {
+            
+            const produtosFiltrados = produtos.filter(produto => produto.category === categoriaSelecionada);
+            carregarProdutos(produtosFiltrados);  
+        }
+    })
+
+}
+
+
 
 
 
