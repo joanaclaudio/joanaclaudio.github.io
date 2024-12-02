@@ -40,13 +40,10 @@ a{
 }
 #cesto{
     
-    display: flex;
-    flex-wrap: wrap; /* Permite que os produtos "quebrem" para a próxima linha, se necessário */
-    gap: 10px; /* Espaço entre os produtos */
-    justify-content: flex-start; /* Alinha os produtos à esquerda */
-    align-items: flex-start; /* Garante alinhamento superior */
-    position: relative; /* Para posicionar o custo total abaixo */
-    background-color: rgb(98, 0, 130);
+    display:flex;
+    justify-content:space-around;
+    align-items:baseline;
+    background-color: rgba(98, 0, 130, 0.253);
 }
 #custo-total {
     width: 100%; 
@@ -96,7 +93,7 @@ a{
 .article2{
     display:grid;
     justify-content: center;
-    
+    align-items: center;
     background-color: rgb(255, 255, 202);
     width: 250px;
     height: 200px;
@@ -113,10 +110,9 @@ a{
     margin-left: 75px;
 }
 .img2{
-    display:flex;
-    justify-content:center;
-    align-items: center;
-    margin-left: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    
 }
 .p2{
     font-size: 13px;
@@ -128,18 +124,33 @@ a{
     align-items: center;
 }
 .produtosOrganizados{
-    display: flex; /* Use flexbox for side-by-side layout */
-    flex-wrap:wrap; /* Wrap items to the next line when full */
-    justify-content: space-between; /* Distribute space evenly between items */
-    margin: 0 auto; /* Center the container horizontally */
-    width: fit-content; /* Allow container to adjust to product width */
-    /* Optional: Add padding/margin for spacing between container and edges */
-    padding: 40px
+    display: flex; 
+    flex-wrap:wrap; 
+    justify-content: space-between; 
+    margin: 0 auto; 
+    width: fit-content;
+    padding: 100px;
+    
+
 }
 
-.button{
-    
-    padding: 2px;   
+.boxFiltro{
+    display: flex;
+    justify-content:center;  /* Alinha os itens à esquerda */
+    align-items: center;
+    gap: 40px;
+    background-color: gray;
+    margin-top: 0px;
+    border-radius: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 10px;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 
