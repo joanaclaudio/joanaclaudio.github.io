@@ -20,6 +20,7 @@ function carregarDados() {
             ordenarProdutos(produtos);
             pesquisarProdutos(produtos);
             adicionarTodosOsProdutos(produtos);
+            menosInformacao(produtos);
             
             
             // Carregar categorias
@@ -93,10 +94,7 @@ function carregarProdutos(produtos){
         p1.textContent = `Custo total: ${produto.price} €`;
 
         article.appendChild(p1)
-        botaoMenosInfo.onclick = () => {
-
-
-        }
+        
         p2.textContent = `${produto.description}`
         
         p2.classList.add('box')
@@ -305,7 +303,7 @@ function carregarDescontos() {
     const estudante = document.getElementById('estudante');
     const coupon = document.getElementById('coupon');
     const button = document.getElementById('compra')
-    
+    const address = document.getElementById('address')
     
     button.addEventListener('click', () => {
         let idsProdutos = [];
@@ -333,16 +331,18 @@ function carregarDescontos() {
                 products: idsProdutos,
                 student: estudante.checked,
                 coupon: "black-friday",
+                address: address
             })
         })
         .then(response => response.json()) 
         .then(data => {
-            console.log('Resposta da API:', data); // Verifique o formato da resposta
+            console.log('Resposta da API:', data); 
             const totalCost = data.totalCost;  
-            const reference = data.reference;  
+            const reference = data.reference; 
+             
             
-            // Passa os valores para a função que apresenta os descontos
-            apresentarDescontos(totalCost, reference);
+            
+            apresentarDescontos(totalCost, reference, address);
             
         })
         .catch(error => {
@@ -353,18 +353,21 @@ function carregarDescontos() {
 
 
 
-function apresentarDescontos(totalCost, reference) {
+function apresentarDescontos(totalCost, reference, address) {
     
     const price = totalCost; 
     const referencia = reference; 
+    
 
     console.log('Preço:', price);
     console.log('Referência:', referencia);
     const p1 = document.createElement('p');
     const p2 = document.createElement('p');
+    const p3 = document.createElement ('p')
     
     p1.textContent = `Valor final a pagar (com eventuais descontos): ${price}€`;
     p2.textContent = `Referência de pagamento: ${referencia}`;
+    p3.textContent = `Address: ${address}`;
 
     
     
@@ -382,7 +385,64 @@ function adicionarTodosOsProdutos(produtos){
 }
 const botaoMenosInfo = document.getElementById('menosInfo')
 function menosInformacao(produtos){
+    botaoMenosInfo.onclick = () => {
+        produtosContainer.innerHTML='';
+        produtos.forEach(produto => {
+            const article = document.createElement('article');
+            const h2 = document.createElement('h2');
+            const img = document.createElement('img');
+            const p1 = document.createElement('p')
+            
+            const button = document.createElement('button')
+            const quebraLinha = document.createElement('br')
+            h2.textContent = `${produto.title}`;
     
+            article.appendChild(h2);
+            
+            img.src = `${produto.image} `;
+            img.alt = ` ${produto.title}`;
+            img.height = 100;
+            img.width = 100;
+            article.appendChild(img);
+    
+            p1.textContent = `Custo total: ${produto.price} €`;
+    
+            article.appendChild(p1)
+            
+           
+            button.textContent = `+ Adicionar ao Cesto`;
+            
+            article.appendChild(button);
+            button.onclick = () => {
+                listaCesto.push(produto);
+    
+                // Atualizando o localStorage
+                localStorage.setItem('lista', JSON.stringify(listaCesto))
+               adicionarAoCesto(produto);
+    
+            };
+            
+    
+            article.classList.add('article');
+    
+            h2.classList.add('titulo');
+    
+            img.classList.add('img');
+    
+            p1.classList.add('p1');
+            
+    
+            button.classList.add('button')
+    
+    
+            
+            produtosContainer.append(article);
+            
+            produtosContainer.classList.add('produtosOrganizados')
+    
+        });
+
+    }
 }
 
 

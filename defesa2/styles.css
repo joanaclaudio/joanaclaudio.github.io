@@ -183,8 +183,19 @@ h2{
     border-radius: 20px;
     font-weight: bold; 
     background-color: rgba(0, 255, 255, 0.149);
-    margin-left: 590px;
-    margin-top: 10px;
+    
+}
+#menosInfo {
+    font-size: 15px;
+    padding: 20px;
+    border-radius: 20px;
+    font-weight: bold; 
+    background-color: rgba(0, 255, 255, 0.149);
+   
+}
+.botoes{
+    display: flex;
+    justify-content:space-between;
 }
 
 
