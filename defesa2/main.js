@@ -367,12 +367,15 @@ function apresentarDescontos(totalCost, reference, address) {
     
     p1.textContent = `Valor final a pagar (com eventuais descontos): ${price}€`;
     p2.textContent = `Referência de pagamento: ${referencia}`;
-    p3.textContent = `Address: ${address}`;
+    p3.textContent = `Address: ${address.value}`//faltava este;
 
     
     
     descontoContainer.appendChild(p1);
     descontoContainer.appendChild(p2);
+    descontoContainer.appendChild(p3);//faltava este
+
+
 }
 const botaoTodosProdutos = document.getElementById('produtosTodos')
 function adicionarTodosOsProdutos(produtos){
